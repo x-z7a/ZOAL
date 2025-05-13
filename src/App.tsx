@@ -26,5 +26,6 @@ function App() {
     </Flex>
   );
 }
+console.log(Text, Button, ThemePanel);
 
 export default App;
