@@ -13,7 +13,7 @@ function App() {
             </Heading>
             <Heading size="4" color="sky" mt="6">
               Welcome to the next generation of X-plane simulation. <br />
-              Bring your simulation to life with WebGA.
+              Bring your simulation to life with WebGA!
             </Heading>
           </Box>
           <img
