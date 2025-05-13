@@ -48,6 +48,14 @@ function App() {
           Welcome to the next generation of X-Plane simulation. <br />
           Bring your simulation to life with WebGA.
         </Text>
+        <Button
+          size="4"
+          color="sky"
+          variant="solid"
+          style={{ animation: "fadeInUp 2.2s ease-out both" }}
+        >
+          Join the Beta
+        </Button>
 
         <img
           src="./zoalipad1.png"
@@ -57,13 +65,10 @@ function App() {
             maxWidth: "900px",
             borderRadius: "var(--radius-4)",
             boxShadow: "0px 40px 80px rgba(0, 0, 0, 0.5)",
-            animation: "float 6s ease-in-out infinite, fadeInUp 2s ease-out both",
+            animation:
+              "float 6s ease-in-out infinite, fadeInUp 2s ease-out both",
           }}
         />
-
-        <Button size="4" color="sky" variant="solid" style={{ animation: "fadeInUp 2.2s ease-out both" }}>
-          Get Started
-        </Button>
       </Flex>
     </Box>
   );
