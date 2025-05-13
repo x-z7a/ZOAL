@@ -91,7 +91,16 @@ function App() {
                 <Dialog.Title className="dialog-title">
                   Join the Beta
                 </Dialog.Title>
-                <form name="beta" netlify onSubmit={handleSubmit} className="form-grid">
+                <form
+                  name="beta"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  onSubmit={handleSubmit}
+                  className="form-grid"
+                >
+                  <input type="hidden" name="beta-sign-up" value="beta" />
+                  <input type="hidden" name="bot-field" />
                   <Label.Root htmlFor="name">Name</Label.Root>
                   <TextField.Root
                     id="name"
@@ -104,7 +113,7 @@ function App() {
 
                   <Label.Root htmlFor="name">Email</Label.Root>
                   <TextField.Root
-                    id="name"
+                    id="email"
                     name="email"
                     value={form.email}
                     onChange={handleChange}
