@@ -26,47 +26,57 @@
     transform: translateY(-6px);
   }
 }
+input {
+  border: 1px solid white;
+}
+.dark-input input {
+  color: white;
+}
 
+.dialog-overlay {
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
 
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
+.dialog-content {
+  background: #1c1c1c;
+  border-radius: 12px;
   padding: 2rem;
-  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001;
+  color: white;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
- }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dialog-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.form-grid {
+  display: grid;
+  gap: 1rem;
+}
+.white-text {
+  color: white;
 }
 
-.card {
-  padding: 2em;
+.toast-viewport {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 2000;
 }
 
-.read-the-docs {
-  color: #888;
-} */
+input {
+  color: white !important;
+  font-weight: bold  !important;
+}
