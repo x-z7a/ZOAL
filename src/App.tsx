@@ -99,7 +99,7 @@ function App() {
               <Dialog.Title className="dialog-title">
                 Join the Beta
               </Dialog.Title>
-              <form netlify
+              <form
                 name="beta"
                 method="POST"
                 data-netlify="true"
