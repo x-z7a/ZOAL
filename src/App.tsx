@@ -1,10 +1,10 @@
+import "@radix-ui/themes/styles.css";
+import "./App.css";
 import { useState } from "react";
 import { Box, Flex, Heading, Text, Button, TextField } from "@radix-ui/themes";
 import * as Dialog from "@radix-ui/react-dialog";
 import * as Toast from "@radix-ui/react-toast";
 import * as Label from "@radix-ui/react-label";
-import "./App.css";
-import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 
 function App() {
@@ -76,74 +76,73 @@ function App() {
           </Text>
 
           <Dialog.Root open={openDialog} onOpenChange={setOpenDialog}>
-            <Dialog.Trigger asChild>
-              <Button
-                size="4"
-                color="sky"
-                variant="solid"
-                style={{ animation: "fadeInUp 2.2s ease-out both" }}
-              >
-                Join the Beta
-              </Button>
-            </Dialog.Trigger>
+  <Dialog.Trigger asChild>
+    <Button
+      size="4"
+      color="sky"
+      variant="solid"
+      style={{ animation: "fadeInUp 2.2s ease-out both" }}
+    >
+      Join the Beta
+    </Button>
+  </Dialog.Trigger>
 
-            <Dialog.Portal>
-              <Dialog.Overlay className="dialog-overlay" />
-              <Dialog.Content className="dialog-content">
-                <Dialog.Title className="dialog-title">
-                  Join the Beta
-                </Dialog.Title>
-                <form
-                  name="beta"
-                  method="POST"
-                  data-netlify="true"
-                  netlify-honeypot="bot-field"
-                  onSubmit={handleSubmit}
-                  className="form-grid"
-                >
-                  <input type="hidden" name="beta-sign-up" value="beta" />
-                  <input type="hidden" name="bot-field" />
-                  <Label.Root htmlFor="name">Name</Label.Root>
-                  <TextField.Root
-                    id="name"
-                    name="name"
-                    value={form.name}
-                    onChange={handleChange}
-                    required
-                    color="sky"
-                  />
+  {/* NO Portal */}
+  <Dialog.Overlay className="dialog-overlay" />
+  <Dialog.Content className="dialog-content">
+    <Dialog.Title className="dialog-title">Join the Beta</Dialog.Title>
+    <form
+      name="beta"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      onSubmit={handleSubmit}
+      className="form-grid"
+    >
+      <input type="hidden" name="beta-sign-up" value="beta" />
+      <input type="hidden" name="bot-field" />
 
-                  <Label.Root htmlFor="name">Email</Label.Root>
-                  <TextField.Root
-                    id="email"
-                    name="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    required
-                    color="sky"
-                  />
+      <Label.Root htmlFor="name">Name</Label.Root>
+      <TextField.Root
+        id="name"
+        name="name"
+        value={form.name}
+        onChange={handleChange}
+        required
+        color="sky"
+      />
 
-                  <Label.Root htmlFor="discord">Discord Name</Label.Root>
-                  <TextField.Root
-                    id="discord"
-                    name="discord"
-                    value={form.discord}
-                    onChange={handleChange}
-                    color="sky"
-                  />
+      <Label.Root htmlFor="email">Email</Label.Root>
+      <TextField.Root
+        id="email"
+        name="email"
+        value={form.email}
+        onChange={handleChange}
+        required
+        color="sky"
+      />
 
-                  <Flex gap="3" justify="end" mt="4">
-                    <Dialog.Close asChild>
-                      <Button variant="soft">Cancel</Button>
-                    </Dialog.Close>
-                    <Button type="submit" color="sky" variant="solid">
-                      Submit
-                    </Button>
-                  </Flex>
-                </form>
-              </Dialog.Content>
-            </Dialog.Portal>
-          </Dialog.Root>
+      <Label.Root htmlFor="discord">Discord Name</Label.Root>
+      <TextField.Root
+        id="discord"
+        name="discord"
+        value={form.discord}
+        onChange={handleChange}
+        color="sky"
+      />
+
+      <Flex gap="3" justify="end" mt="4">
+        <Dialog.Close asChild>
+          <Button variant="soft">Cancel</Button>
+        </Dialog.Close>
+        <Button type="submit" color="sky" variant="solid">
+          Submit
+        </Button>
+      </Flex>
+    </form>
+  </Dialog.Content>
+</Dialog.Root>
+
 
           <img
             src="./zoalipad1.png"
