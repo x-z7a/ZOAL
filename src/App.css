@@ -79,4 +79,5 @@ input {
 input {
   color: white !important;
   font-weight: bold  !important;
+  border: 1px solid #7e7e7e !important;
 }

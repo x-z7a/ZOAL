@@ -4,6 +4,8 @@ import * as Dialog from "@radix-ui/react-dialog";
 import * as Toast from "@radix-ui/react-toast";
 import * as Label from "@radix-ui/react-label";
 import "./App.css";
+import "@radix-ui/themes/styles.css";
+import { Theme } from "@radix-ui/themes";
 
 function App() {
   const [openDialog, setOpenDialog] = useState(false);
@@ -26,7 +28,7 @@ function App() {
   };
 
   return (
-    <>
+    <Theme appearance="dark" accentColor="indigo" grayColor="sand" radius="large" scaling="100%">
       <Box
         style={{
           minHeight: "100vh",
@@ -108,7 +110,7 @@ function App() {
                     value={form.name}
                     onChange={handleChange}
                     required
-                    color="orange"
+                    color="sky"
                   />
 
                   <Label.Root htmlFor="name">Email</Label.Root>
@@ -127,13 +129,14 @@ function App() {
                     name="discord"
                     value={form.discord}
                     onChange={handleChange}
+                    color="sky"
                   />
 
                   <Flex gap="3" justify="end" mt="4">
                     <Dialog.Close asChild>
                       <Button variant="soft">Cancel</Button>
                     </Dialog.Close>
-                    <Button type="submit" color="sky">
+                    <Button type="submit" color="sky" variant="solid">
                       Submit
                     </Button>
                   </Flex>
@@ -167,7 +170,7 @@ function App() {
         </Toast.Root>
         <Toast.Viewport className="toast-viewport" />
       </Toast.Provider>
-    </>
+    </Theme>
   );
 }
 
