@@ -20,12 +20,29 @@ function App() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const formData = new FormData();
+  formData.append("form-name", "beta");
+  formData.append("name", form.name);
+  formData.append("email", form.email);
+  formData.append("discord", form.discord);
+
+  try {
+    await fetch("/", {
+      method: "POST",
+      body: formData,
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    });
+
     setOpenDialog(false);
     setOpenToast(true);
     setForm({ name: "", email: "", discord: "" });
-  };
+  } catch (error) {
+    console.error("Form submission error:", error);
+  }
+};
 
   return (
     <Theme
