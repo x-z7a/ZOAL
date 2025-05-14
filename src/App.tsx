@@ -130,7 +130,7 @@ function App() {
                   color="sky"
                 />
 
-                <Label.Root htmlFor="discord">Discord Name</Label.Root>
+                <Label.Root htmlFor="discord">Discord Name - optional</Label.Root>
                 <TextField.Root
                   id="discord"
                   name="discord"
