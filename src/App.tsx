@@ -124,6 +124,7 @@ function App() {
                 <TextField.Root
                   id="email"
                   name="email"
+                  type="email"
                   value={form.email}
                   onChange={handleChange}
                   required
