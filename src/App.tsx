@@ -107,7 +107,7 @@ function App() {
                 onSubmit={handleSubmit}
                 className="form-grid"
               >
-                <input type="hidden" name="beta-sign-up" value="beta" />
+                <input type="hidden" name="form-name" value="beta" />
                 <input type="hidden" name="bot-field" />
 
                 <Label.Root htmlFor="name">Name</Label.Root>
