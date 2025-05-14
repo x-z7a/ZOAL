@@ -23,17 +23,15 @@ function App() {
 const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 
-  const formData = new FormData();
-  formData.append("form-name", "beta");
-  formData.append("name", form.name);
-  formData.append("email", form.email);
-  formData.append("discord", form.discord);
+  const formElement = e.target as HTMLFormElement;
+
+  const formData = new FormData(formElement);
 
   try {
     await fetch("/", {
       method: "POST",
-      body: formData,
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as any).toString(),
     });
 
     setOpenDialog(false);
@@ -43,7 +41,6 @@ const handleSubmit = async (e: React.FormEvent) => {
     console.error("Form submission error:", error);
   }
 };
-
   return (
     <Theme
       appearance="dark"
