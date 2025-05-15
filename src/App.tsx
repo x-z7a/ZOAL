@@ -7,7 +7,6 @@ import { Theme } from "@radix-ui/themes";
 import { motion } from "framer-motion";
 
 function App() {
-
   const [openToast, setOpenToast] = useState(false);
 
   return (
@@ -70,7 +69,7 @@ function App() {
             mt="6"
             variant="solid"
             style={{ animation: "fadeInUp 2.2s ease-out both" }}
-            onClick={() => window.open("https://chatgpt.com", "_blank")}
+            onClick={() => window.open("https://zoal.gumroad.com/l/WebGA", "_blank")}
           >
             Join Early Access
           </Button>
@@ -260,13 +259,21 @@ function App() {
               textAlign: "center",
               fontWeight: "bold",
               color: "#3498db",
-              fontSize: "1.5rem",
+              fontSize: "clamp(1.1rem, 2.5vw, 1.5rem)", // scales between mobile and desktop
               letterSpacing: "0.02em",
+              padding: "0 1rem", // adds horizontal breathing room
             }}
           >
             <Box mb="6">WebGA is powered by</Box>
             <Box>
-              <img src="./zoalsimmods.svg" alt="ZOAL Logo" />
+              <img
+                src="./zoalsimmods.svg"
+                alt="ZOAL Logo"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
             </Box>
           </motion.div>
 
