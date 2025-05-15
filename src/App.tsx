@@ -30,7 +30,7 @@ function App() {
           justify="center"
           gap="6"
           style={{
-            maxWidth: "960px",
+            maxWidth: "1000px",
             margin: "0 auto",
             animation: "fadeIn 1.2s ease-out both",
           }}
