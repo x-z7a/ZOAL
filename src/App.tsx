@@ -227,7 +227,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   fontWeight: "500",
                 }}
               >
-                Have full view of  your aircraft systems from your very own home cockpit system. <br />
+                Have full view of your aircraft systems from your very own home cockpit devices. <br />
               </Heading>
               <Heading
                 size="5"
@@ -240,7 +240,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   fontWeight: "500",
                 }}
               >
-                Your avionics at the tip of your finger: Say goodbye to the days of mouse frustrations on approach or on the ground. <br />
+                Your avionics at the tip of your finger: Say goodbye to the days of mouse frustrations - whether on approach or on the ground. <br />
                 </Heading>
             </Box>
 
