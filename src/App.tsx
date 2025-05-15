@@ -2,46 +2,14 @@ import "@radix-ui/themes/styles.css";
 import "./App.css";
 import { useState } from "react";
 import { Box, Flex, Heading, Text, Button, TextField } from "@radix-ui/themes";
-import * as Dialog from "@radix-ui/react-dialog";
 import * as Toast from "@radix-ui/react-toast";
-import * as Label from "@radix-ui/react-label";
 import { Theme } from "@radix-ui/themes";
 import { motion } from "framer-motion";
 
 function App() {
-  const [openDialog, setOpenDialog] = useState(false);
+
   const [openToast, setOpenToast] = useState(false);
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    discord: "",
-  });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    const formElement = e.target as HTMLFormElement;
-
-    const formData = new FormData(formElement);
-
-    try {
-      await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData as any).toString(),
-      });
-
-      setOpenDialog(false);
-      setOpenToast(true);
-      setForm({ name: "", email: "", discord: "" });
-    } catch (error) {
-      console.error("Form submission error:", error);
-    }
-  };
   return (
     <Theme
       appearance="dark"
@@ -96,78 +64,16 @@ function App() {
             Bring your simulation to life with WebGA.
           </Text>
 
-          <Dialog.Root open={openDialog} onOpenChange={setOpenDialog}>
-            <Dialog.Trigger asChild>
-              <Button
-                size="4"
-                color="sky"
-                mt="6"
-                variant="solid"
-                style={{ animation: "fadeInUp 2.2s ease-out both" }}
-              >
-                Join the Beta
-              </Button>
-            </Dialog.Trigger>
-
-            <Dialog.Overlay className="dialog-overlay" />
-            <Dialog.Content className="dialog-content">
-              <Dialog.Title className="dialog-title">
-                Join the Beta
-              </Dialog.Title>
-              <form
-                name="beta"
-                method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                onSubmit={handleSubmit}
-                className="form-grid"
-              >
-                <input type="hidden" name="form-name" value="beta" />
-                <input type="hidden" name="bot-field" />
-
-                <Label.Root htmlFor="name">Name</Label.Root>
-                <TextField.Root
-                  id="name"
-                  name="name"
-                  value={form.name}
-                  onChange={handleChange}
-                  required
-                  color="sky"
-                />
-
-                <Label.Root htmlFor="email">Email</Label.Root>
-                <TextField.Root
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  required
-                  color="sky"
-                />
-
-                <Label.Root htmlFor="discord">
-                  Discord Name - optional
-                </Label.Root>
-                <TextField.Root
-                  id="discord"
-                  name="discord"
-                  value={form.discord}
-                  onChange={handleChange}
-                  color="sky"
-                />
-
-                <Flex gap="3" justify="end" mt="4">
-                  <Dialog.Close asChild>
-                    <Button variant="soft">Cancel</Button>
-                  </Dialog.Close>
-                  <Button type="submit" color="sky" variant="solid">
-                    Submit
-                  </Button>
-                </Flex>
-              </form>
-            </Dialog.Content>
-          </Dialog.Root>
+          <Button
+            size="4"
+            color="sky"
+            mt="6"
+            variant="solid"
+            style={{ animation: "fadeInUp 2.2s ease-out both" }}
+            onClick={() => window.open("https://chatgpt.com", "_blank")}
+          >
+            Join Early Access
+          </Button>
 
           <motion.img
             src="./zoalipad1.png"
