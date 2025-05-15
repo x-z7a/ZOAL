@@ -21,27 +21,27 @@ function App() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
 
-  const formElement = e.target as HTMLFormElement;
+    const formElement = e.target as HTMLFormElement;
 
-  const formData = new FormData(formElement);
+    const formData = new FormData(formElement);
 
-  try {
-    await fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData as any).toString(),
-    });
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
+      });
 
-    setOpenDialog(false);
-    setOpenToast(true);
-    setForm({ name: "", email: "", discord: "" });
-  } catch (error) {
-    console.error("Form submission error:", error);
-  }
-};
+      setOpenDialog(false);
+      setOpenToast(true);
+      setForm({ name: "", email: "", discord: "" });
+    } catch (error) {
+      console.error("Form submission error:", error);
+    }
+  };
   return (
     <Theme
       appearance="dark"
@@ -227,7 +227,8 @@ const handleSubmit = async (e: React.FormEvent) => {
                   fontWeight: "500",
                 }}
               >
-                Have full view of your aircraft systems from your very own home cockpit devices. <br />
+                Have full view of your aircraft systems from your very own home
+                cockpit devices. <br />
               </Heading>
               <Heading
                 size="5"
@@ -240,8 +241,10 @@ const handleSubmit = async (e: React.FormEvent) => {
                   fontWeight: "500",
                 }}
               >
-                Your avionics at the tip of your finger: Say goodbye to the days of mouse frustrations - whether on approach or on the ground. <br />
-                </Heading>
+                Your avionics at the tip of your finger: Say goodbye to the days
+                of mouse frustrations - whether on approach or on the ground.{" "}
+                <br />
+              </Heading>
             </Box>
 
             <Box style={{ flex: "1 1 600px", textAlign: "center" }}>
@@ -256,6 +259,144 @@ const handleSubmit = async (e: React.FormEvent) => {
               />
             </Box>
           </motion.div>
+          {/* Supported Aircraft */}
+          {/* Features Grid Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: "2rem",
+              marginTop: "6rem",
+              color: "white",
+              maxWidth: "1000px",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
+            {/* Supported Aircraft */}
+            <Box style={{ flex: "1 1 400px", minWidth: "300px" }}>
+              <Heading size="6" as="h2" mb="4">
+                ✅ Supported Aircraft
+              </Heading>
+              <ul
+                style={{
+                  listStyleType: "square",
+                  paddingLeft: "1.5rem",
+                  lineHeight: "2",
+                }}
+              >
+                <li>Cessna 172 G1000</li>
+                <li>Cirrus SR22</li>
+                <li>Laminar Research Baron 58</li>
+                <li>Any aircraft using default Garmin G1000/G530 stack</li>
+              </ul>
+            </Box>
+
+            {/* Supported Devices */}
+            <Box style={{ flex: "1 1 400px", minWidth: "300px" }}>
+              <Heading size="6" as="h2" mb="4">
+                📱 Supported Devices
+              </Heading>
+              <Text size="4">
+                WebGA runs on any modern tablet with a browser:
+                <br />
+                iPad, Android tablet, Amazon Fire, and more.
+              </Text>
+            </Box>
+
+            {/* Included Features */}
+            <Box style={{ flex: "1 1 400px", minWidth: "300px" }}>
+              <Heading size="6" as="h2" mb="4">
+                🎛️ Included Simulation Modules
+              </Heading>
+              <ul
+                style={{
+                  listStyleType: "square",
+                  paddingLeft: "1.5rem",
+                  lineHeight: "2",
+                }}
+              >
+                <li>G1000 PFD</li>
+                <li>G1000 MFD</li>
+                <li>Garmin G530</li>
+                <li>GCU 478 Control Unit</li>
+                <li>SR22 GCU</li>
+              </ul>
+            </Box>
+
+            {/* Release Notes */}
+            <Box style={{ flex: "1 1 400px", minWidth: "300px" }}>
+              <Heading size="6" as="h2" mb="4">
+                🛫 Release Notes: <code>v001b2</code>
+              </Heading>
+              <Text size="4">
+                New aircraft support added: <br />
+                ✅ X-Plane 12 SR22 GCU integration <br />✅ Improved
+                compatibility with non-Garmin stack avionics
+              </Text>
+            </Box>
+          </motion.div>
+
+          {/* Bold ZOAL statement */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            style={{
+              maxWidth: "900px",
+              margin: "4rem auto 6rem auto",
+              textAlign: "center",
+              fontWeight: "bold",
+              color: "#3498db",
+              fontSize: "1.5rem",
+              letterSpacing: "0.02em",
+            }}
+          >
+            <Box mb="6">WebGA is powered by</Box>
+            <Box>
+              <img src="./zoalsimmods.svg" alt="ZOAL Logo" />
+            </Box>
+          </motion.div>
+
+          {/* Footer */}
+          <footer
+            style={{
+              borderTop: "1px solid #333",
+              padding: "2rem 1rem",
+              textAlign: "center",
+              color: "gray",
+            }}
+          >
+            <Text size="2">
+              © {new Date().getFullYear()} ZOAL. All rights reserved.
+            </Text>
+            <Flex gap="4" justify="center" mt="3">
+              <a
+                href="#"
+                style={{ color: "gray", textDecoration: "underline" }}
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                style={{ color: "gray", textDecoration: "underline" }}
+              >
+                Terms of Use
+              </a>
+              <a
+                href="#"
+                style={{ color: "gray", textDecoration: "underline" }}
+              >
+                Contact
+              </a>
+            </Flex>
+          </footer>
         </Flex>
       </Box>
 
