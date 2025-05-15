@@ -6,6 +6,7 @@ import * as Toast from "@radix-ui/react-toast";
 import { Theme } from "@radix-ui/themes";
 import { motion } from "framer-motion";
 
+
 function App() {
   const [openToast, setOpenToast] = useState(false);
 
