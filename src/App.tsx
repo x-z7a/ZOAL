@@ -6,6 +6,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import * as Toast from "@radix-ui/react-toast";
 import * as Label from "@radix-ui/react-label";
 import { Theme } from "@radix-ui/themes";
+import { motion } from "framer-motion";
 
 function App() {
   const [openDialog, setOpenDialog] = useState(false);
@@ -100,6 +101,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               <Button
                 size="4"
                 color="sky"
+                mt="6"
                 variant="solid"
                 style={{ animation: "fadeInUp 2.2s ease-out both" }}
               >
@@ -107,7 +109,6 @@ const handleSubmit = async (e: React.FormEvent) => {
               </Button>
             </Dialog.Trigger>
 
-            {/* NO Portal */}
             <Dialog.Overlay className="dialog-overlay" />
             <Dialog.Content className="dialog-content">
               <Dialog.Title className="dialog-title">
@@ -145,7 +146,9 @@ const handleSubmit = async (e: React.FormEvent) => {
                   color="sky"
                 />
 
-                <Label.Root htmlFor="discord">Discord Name - optional</Label.Root>
+                <Label.Root htmlFor="discord">
+                  Discord Name - optional
+                </Label.Root>
                 <TextField.Root
                   id="discord"
                   name="discord"
@@ -166,18 +169,93 @@ const handleSubmit = async (e: React.FormEvent) => {
             </Dialog.Content>
           </Dialog.Root>
 
-          <img
+          <motion.img
             src="./zoalipad1.png"
             alt="WebGA UI Screenshot"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 1.6, ease: "easeOut" }}
             style={{
               width: "100%",
+              marginTop: "4rem",
               maxWidth: "900px",
               borderRadius: "var(--radius-4)",
               boxShadow: "0px 40px 80px rgba(0, 0, 0, 0.5)",
-              animation:
-                "float 6s ease-in-out infinite, fadeInUp 2s ease-out both",
+              animation: "float 6s ease-in-out infinite",
             }}
           />
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 1.4, ease: "easeOut" }}
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              justifyContent: "space-between",
+              alignItems: "center",
+              gap: "2rem",
+              marginTop: "6rem",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
+            <Box style={{ flex: "1 1 200px" }}>
+              <Heading
+                size="7"
+                as="h2"
+                highContrast
+                style={{
+                  color: "white",
+                  lineHeight: 1.2,
+                  fontWeight: "700",
+                }}
+              >
+                Experience X-Plane like never before
+              </Heading>
+              <Heading
+                size="5"
+                as="h2"
+                mt="6"
+                highContrast
+                style={{
+                  color: "white",
+                  lineHeight: 1.2,
+                  fontWeight: "500",
+                }}
+              >
+                Have full view of  your aircraft systems from your very own home cockpit system. <br />
+              </Heading>
+              <Heading
+                size="5"
+                as="h2"
+                mt="6"
+                highContrast
+                style={{
+                  color: "white",
+                  lineHeight: 1.2,
+                  fontWeight: "500",
+                }}
+              >
+                Your avionics at the tip of your finger: Say goodbye to the days of mouse frustrations on approach or on the ground. <br />
+                </Heading>
+            </Box>
+
+            <Box style={{ flex: "1 1 600px", textAlign: "center" }}>
+              <img
+                src="./retro1.png"
+                style={{
+                  width: "100%",
+                  maxWidth: "600px",
+                  borderRadius: "12px",
+                  boxShadow: "0px 20px 60px rgba(0, 0, 0, 0.5)",
+                }}
+              />
+            </Box>
+          </motion.div>
         </Flex>
       </Box>
 
