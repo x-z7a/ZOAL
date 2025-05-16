@@ -197,10 +197,10 @@ function App() {
               <strong>WebGA</strong> is a lightweight companion plugin for
               X-Plane 12 that extends your aircraft's avionics directly to your
               iPad or tablet — no clunky software bridges or extra hardware
-              required. It mirrors your cockpit's G1000 PFD/MFD, Garmin G530,
-              or almost any other popout X-Plane 12 window in near real-time over Wi-Fi,
-              allowing you to interact with the avionics as if they were built
-              into your home cockpit.
+              required. It mirrors your cockpit's G1000 PFD/MFD, Garmin G530, or
+              almost any other popout X-Plane 12 window in near real-time over
+              Wi-Fi, allowing you to interact with the avionics as if they were
+              built into your home cockpit.
               <br />
               <br />
               Whether you're managing an approach, tuning radios, or just want
@@ -208,17 +208,21 @@ function App() {
               sim the way it was meant to be flown — hands-on, heads-up.
             </Text>
 
-            <Button
-              size="4"
-              color="sky"
-              variant="solid"
-              onClick={() => window.open("https://example.com", "_blank")}
-              style={{
-                animation: "fadeInUp 2.2s ease-out both",
-              }}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 1.1, ease: "easeOut", delay: 0.2 }}
             >
-              See It In Action
-            </Button>
+              <Button
+                size="4"
+                color="sky"
+                variant="solid"
+                onClick={() => window.open("https://example.com", "_blank")}
+              >
+                See It In Action
+              </Button>
+            </motion.div>
           </motion.div>
 
           {/* Supported Aircraft */}
