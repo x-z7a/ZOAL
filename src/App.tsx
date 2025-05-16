@@ -272,9 +272,20 @@ function App() {
               </Heading>
               <Text size="4">
                 WebGA runs on any modern tablet with a browser:
-                <br />
-                iPad, Android tablet, Amazon Fire, and more.
+                
               </Text>
+              <ul
+                style={{
+                  listStyleType: "square",
+                  paddingLeft: "1.5rem",
+                  lineHeight: "2",
+                }}>
+                <li>iPad</li>
+                <li>Android Tablets</li>
+                <li>Windows Surface</li>
+                <li>Amazon Fire</li>
+                <li>... and more</li>
+                </ul>
             </Box>
 
             {/* Included Features */}
