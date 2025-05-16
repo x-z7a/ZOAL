@@ -256,10 +256,12 @@ function App() {
                   lineHeight: "2",
                 }}
               >
-                <li>Cessna 172 G1000</li>
-                <li>Cirrus SR22</li>
-                <li>Laminar Research Baron 58</li>
-                <li>Any aircraft using default Garmin G1000/G530 stack</li>
+                <li>AFL C172 Analog & Digital</li>
+                <li>TorqueSim Cirrus SR22</li>
+                <li>Aerobask Phenom 300</li>
+                <li>C90B G1000/G530</li>
+                <li>AFL KingAir 350</li>
+                <li>Virtually any aircraft using default Garmin G1000/G530 stack</li>
               </ul>
             </Box>
 
@@ -302,8 +304,9 @@ function App() {
               </Heading>
               <Text size="4">
                 New aircraft support added: <br />
-                ✅ X-Plane 12 SR22 GCU integration <br />✅ Improved
-                compatibility with non-Garmin stack avionics
+                ✅ X-Plane 12 SR22 GCU integration <br />
+                ✅ Improved G1000 wrapper <br />
+                ✅ Improved compatibility with non-Garmin stack avionics
               </Text>
             </Box>
           </motion.div>
