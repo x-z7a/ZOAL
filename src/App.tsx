@@ -6,7 +6,6 @@ import * as Toast from "@radix-ui/react-toast";
 import { Theme } from "@radix-ui/themes";
 import { motion } from "framer-motion";
 
-
 function App() {
   const [openToast, setOpenToast] = useState(false);
 
@@ -70,7 +69,9 @@ function App() {
             mt="6"
             variant="solid"
             style={{ animation: "fadeInUp 2.2s ease-out both" }}
-            onClick={() => window.open("https://zoal.gumroad.com/l/WebGA", "_blank")}
+            onClick={() =>
+              window.open("https://zoal.gumroad.com/l/WebGA", "_blank")
+            }
           >
             Join Early Access
           </Button>
@@ -165,6 +166,61 @@ function App() {
               />
             </Box>
           </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            style={{
+              marginTop: "6rem",
+              padding: "0 0",
+              maxWidth: "1000px",
+              marginLeft: "auto",
+              marginRight: "auto",
+              textAlign: "center",
+              color: "white",
+            }}
+          >
+            <Heading size="6" as="h2" mb="4">
+              What is WebGA?
+            </Heading>
+
+            <Text
+              as="p"
+              style={{
+                fontSize: "clamp(1rem, 2vw, 1.25rem)",
+                lineHeight: 1.6,
+                marginBottom: "2rem",
+                textAlign: "center",
+              }}
+            >
+              <strong>WebGA</strong> is a lightweight companion plugin for
+              X-Plane 12 that extends your aircraft's avionics directly to your
+              iPad or tablet — no clunky software bridges or extra hardware
+              required. It mirrors your cockpit's G1000 PFD/MFD, Garmin G530,
+              or almost any other popout X-Plane 12 window in near real-time over Wi-Fi,
+              allowing you to interact with the avionics as if they were built
+              into your home cockpit.
+              <br />
+              <br />
+              Whether you're managing an approach, tuning radios, or just want
+              to declutter your monitor, WebGA gives you the freedom to fly your
+              sim the way it was meant to be flown — hands-on, heads-up.
+            </Text>
+
+            <Button
+              size="4"
+              color="sky"
+              variant="solid"
+              onClick={() => window.open("https://example.com", "_blank")}
+              style={{
+                animation: "fadeInUp 2.2s ease-out both",
+              }}
+            >
+              See It In Action
+            </Button>
+          </motion.div>
+
           {/* Supported Aircraft */}
           {/* Features Grid Section */}
           <motion.div
