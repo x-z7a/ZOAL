@@ -131,7 +131,7 @@ function App() {
                 style={{
                   color: "white",
                   lineHeight: 1.2,
-                  fontWeight: "500",
+                  fontWeight: "400",
                 }}
               >
                 Have full view of your aircraft systems from your very own home
@@ -145,7 +145,7 @@ function App() {
                 style={{
                   color: "white",
                   lineHeight: 1.2,
-                  fontWeight: "500",
+                  fontWeight: "400",
                 }}
               >
                 Your avionics at the tip of your finger: Say goodbye to the days
