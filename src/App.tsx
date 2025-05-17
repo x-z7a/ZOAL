@@ -1,14 +1,11 @@
 import "@radix-ui/themes/styles.css";
 import "./App.css";
-import { useState } from "react";
 import { Box, Flex, Heading, Text, Button } from "@radix-ui/themes";
-import * as Toast from "@radix-ui/react-toast";
 import { Theme } from "@radix-ui/themes";
 import { motion } from "framer-motion";
+import NavBar from "./NavBar";
 
 function App() {
-  const [openToast, setOpenToast] = useState(false);
-
   return (
     <Theme
       appearance="dark"
@@ -21,9 +18,11 @@ function App() {
         style={{
           minHeight: "100vh",
           background: "radial-gradient(circle at top, #1a1a1a, #0a0a0a)",
-          padding: "4rem 1rem",
+          // padding: "4rem 1rem",
         }}
       >
+        <NavBar />
+
         <Flex
           direction="column"
           align="center"
@@ -38,6 +37,7 @@ function App() {
           <Heading
             size="9"
             as="h1"
+            mt="6"
             highContrast
             style={{
               textAlign: "center",
@@ -111,49 +111,16 @@ function App() {
             }}
           >
             <Box style={{ flex: "1 1 200px" }}>
-              <Heading
-                size="7"
-                as="h2"
-                highContrast
-                style={{
-                  color: "white",
-                  lineHeight: 1.2,
-                  fontWeight: "700",
-                }}
-              >
+              <Heading size="7" as="h2" highContrast style={{ color: "white" }}>
                 Experience X-Plane like never before
               </Heading>
-              <Heading
-                size="5"
-                as="h2"
-                mt="6"
-                highContrast
-                style={{
-                  color: "white",
-                  lineHeight: 1.2,
-                  fontWeight: "400",
-                }}
-              >
-                Have full view of your aircraft systems from your very own home
-                cockpit devices. <br />
+              <Heading size="5" as="h2" mt="6" highContrast style={{ color: "white" }}>
+                Have full view of your aircraft systems from your very own home cockpit devices.
               </Heading>
-              <Heading
-                size="5"
-                as="h2"
-                mt="6"
-                highContrast
-                style={{
-                  color: "white",
-                  lineHeight: 1.2,
-                  fontWeight: "400",
-                }}
-              >
-                Your avionics at the tip of your finger: Say goodbye to the days
-                of mouse frustrations - whether on approach or on the ground.{" "}
-                <br />
+              <Heading size="5" as="h2" mt="6" highContrast style={{ color: "white" }}>
+                Your avionics at the tip of your finger: Say goodbye to the days of mouse frustrations - whether on approach or on the ground.
               </Heading>
             </Box>
-
             <Box style={{ flex: "1 1 600px", textAlign: "center" }}>
               <img
                 src="./retro1.png"
@@ -166,6 +133,7 @@ function App() {
               />
             </Box>
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -173,7 +141,6 @@ function App() {
             transition={{ duration: 1.2, ease: "easeOut" }}
             style={{
               marginTop: "6rem",
-              padding: "0 0",
               maxWidth: "1000px",
               marginLeft: "auto",
               marginRight: "auto",
@@ -194,18 +161,9 @@ function App() {
                 textAlign: "center",
               }}
             >
-              <strong>WebGA</strong> is a lightweight companion plugin for
-              X-Plane 12 that extends your aircraft's avionics directly to your
-              iPad or tablet — no clunky software bridges or extra hardware
-              required. It mirrors your cockpit's G1000 PFD/MFD, Garmin G530, or
-              almost any other popout X-Plane 12 window in near real-time over
-              Wi-Fi, allowing you to interact with the avionics as if they were
-              built into your home cockpit.
-              <br />
-              <br />
-              Whether you're managing an approach, tuning radios, or just want
-              to declutter your monitor, WebGA gives you the freedom to fly your
-              sim the way it was meant to be flown — hands-on, heads-up.
+              <strong>WebGA</strong> is a lightweight companion plugin for X-Plane 12 that extends your aircraft's avionics directly to your iPad or tablet — no clunky software bridges or extra hardware required. It mirrors your cockpit's G1000 PFD/MFD, Garmin G530, or almost any other popout X-Plane 12 window in near real-time over Wi-Fi, allowing you to interact with the avionics as if they were built into your home cockpit.
+              <br /><br />
+              Whether you're managing an approach, tuning radios, or just want to declutter your monitor, WebGA gives you the freedom to fly your sim the way it was meant to be flown — hands-on, heads-up.
             </Text>
 
             <motion.div
@@ -225,8 +183,7 @@ function App() {
             </motion.div>
           </motion.div>
 
-          {/* Supported Aircraft */}
-          {/* Features Grid Section */}
+          {/* Supported Aircraft / Devices / Features / Release Notes */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -244,18 +201,11 @@ function App() {
               marginRight: "auto",
             }}
           >
-            {/* Supported Aircraft */}
             <Box style={{ flex: "1 1 400px", minWidth: "300px" }}>
               <Heading size="6" as="h2" mb="4">
                 ✅ Supported Aircraft
               </Heading>
-              <ul
-                style={{
-                  listStyleType: "square",
-                  paddingLeft: "1.5rem",
-                  lineHeight: "2",
-                }}
-              >
+              <ul style={{ listStyleType: "square", paddingLeft: "1.5rem", lineHeight: "2" }}>
                 <li>AFL C172 Analog & Digital</li>
                 <li>TorqueSim Cirrus SR22</li>
                 <li>Aerobask Phenom 300</li>
@@ -265,41 +215,25 @@ function App() {
               </ul>
             </Box>
 
-            {/* Supported Devices */}
             <Box style={{ flex: "1 1 400px", minWidth: "300px" }}>
               <Heading size="6" as="h2" mb="4">
                 📱 Supported Devices
               </Heading>
-              <Text size="4">
-                WebGA runs on any modern tablet with a browser:
-                
-              </Text>
-              <ul
-                style={{
-                  listStyleType: "square",
-                  paddingLeft: "1.5rem",
-                  lineHeight: "2",
-                }}>
+              <Text size="4">WebGA runs on any modern tablet with a browser:</Text>
+              <ul style={{ listStyleType: "square", paddingLeft: "1.5rem", lineHeight: "2" }}>
                 <li>iPad</li>
                 <li>Android Tablets</li>
                 <li>Windows Surface</li>
                 <li>Amazon Fire</li>
                 <li>... and more</li>
-                </ul>
+              </ul>
             </Box>
 
-            {/* Included Features */}
             <Box style={{ flex: "1 1 400px", minWidth: "300px" }}>
               <Heading size="6" as="h2" mb="4">
                 🎛️ Included Simulation Modules
               </Heading>
-              <ul
-                style={{
-                  listStyleType: "square",
-                  paddingLeft: "1.5rem",
-                  lineHeight: "2",
-                }}
-              >
+              <ul style={{ listStyleType: "square", paddingLeft: "1.5rem", lineHeight: "2" }}>
                 <li>G1000 PFD</li>
                 <li>G1000 MFD</li>
                 <li>Garmin G530</li>
@@ -308,7 +242,6 @@ function App() {
               </ul>
             </Box>
 
-            {/* Release Notes */}
             <Box style={{ flex: "1 1 400px", minWidth: "300px" }}>
               <Heading size="6" as="h2" mb="4">
                 🛫 Release Notes: <code>v001b2</code>
@@ -322,7 +255,7 @@ function App() {
             </Box>
           </motion.div>
 
-          {/* Bold ZOAL statement */}
+          {/* Footer */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -334,9 +267,9 @@ function App() {
               textAlign: "center",
               fontWeight: "bold",
               color: "#3498db",
-              fontSize: "clamp(1.1rem, 2.5vw, 1.5rem)", // scales between mobile and desktop
+              fontSize: "clamp(1.1rem, 2.5vw, 1.5rem)",
               letterSpacing: "0.02em",
-              padding: "0 1rem", // adds horizontal breathing room
+              padding: "0 1rem",
             }}
           >
             <Box mb="6">WebGA is powered by</Box>
@@ -344,15 +277,11 @@ function App() {
               <img
                 src="./zoalsimmods.svg"
                 alt="ZOAL Logo"
-                style={{
-                  maxWidth: "100%",
-                  height: "auto",
-                }}
+                style={{ maxWidth: "100%", height: "auto" }}
               />
             </Box>
           </motion.div>
 
-          {/* Footer */}
           <footer
             style={{
               borderTop: "1px solid #333",
@@ -361,43 +290,21 @@ function App() {
               color: "gray",
             }}
           >
-            <Text size="2">
-              © {new Date().getFullYear()} ZOAL. All rights reserved.
-            </Text>
+            <Text size="2">© {new Date().getFullYear()} ZOAL. All rights reserved.</Text>
             <Flex gap="4" justify="center" mt="3">
-              <a
-                href="#"
-                style={{ color: "gray", textDecoration: "underline" }}
-              >
+              <a href="#" style={{ color: "gray", textDecoration: "underline" }}>
                 Privacy Policy
               </a>
-              <a
-                href="#"
-                style={{ color: "gray", textDecoration: "underline" }}
-              >
+              <a href="#" style={{ color: "gray", textDecoration: "underline" }}>
                 Terms of Use
               </a>
-              <a
-                href="#"
-                style={{ color: "gray", textDecoration: "underline" }}
-              >
+              <a href="#" style={{ color: "gray", textDecoration: "underline" }}>
                 Contact
               </a>
             </Flex>
           </footer>
         </Flex>
       </Box>
-
-      <Toast.Provider swipeDirection="right">
-        <Toast.Root
-          open={openToast}
-          onOpenChange={setOpenToast}
-          duration={4000}
-        >
-          <Toast.Title>We’ll be in touch soon!</Toast.Title>
-        </Toast.Root>
-        <Toast.Viewport className="toast-viewport" />
-      </Toast.Provider>
     </Theme>
   );
 }

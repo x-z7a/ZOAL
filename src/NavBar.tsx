@@ -1,0 +1,47 @@
+// NavBar.tsx
+import { Link } from "react-router-dom";
+import { Flex, Text } from "@radix-ui/themes";
+
+export default function NavBar() {
+  return (
+    <Flex
+      justify="center"
+      align="center"
+      gap="6"
+      style={{
+        padding: "1.5rem 0",
+        backgroundColor: "#111",
+        borderBottom: "1px solid #333",
+        position: "sticky",
+        top: 0,
+        zIndex: 1000,
+      }}
+    >
+      <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+        <Text size="4" weight="bold">
+          Home
+        </Text>
+      </Link>
+
+      <Link
+        to="/instructions"
+        style={{ color: "white", textDecoration: "none" }}
+      >
+        <Text size="4" weight="bold">
+          Instructions
+        </Text>
+      </Link>
+
+      <a
+        href="https://zoal.gumroad.com/l/WebGA"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: "white", textDecoration: "none" }}
+      >
+        <Text size="4" weight="bold">
+          Join Early Access
+        </Text>
+      </a>
+    </Flex>
+  );
+}
