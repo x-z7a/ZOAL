@@ -18,7 +18,7 @@ export default function NavBar() {
       }}
     >
       <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-        <Text size="4" weight="bold">
+        <Text size="4" weight="regular">
           Home
         </Text>
       </Link>
@@ -27,7 +27,7 @@ export default function NavBar() {
         to="/instructions"
         style={{ color: "white", textDecoration: "none" }}
       >
-        <Text size="4" weight="bold">
+        <Text size="4" weight="regular">
           Instructions
         </Text>
       </Link>
@@ -38,7 +38,7 @@ export default function NavBar() {
         rel="noopener noreferrer"
         style={{ color: "white", textDecoration: "none" }}
       >
-        <Text size="4" weight="bold">
+        <Text size="4" weight="regular">
           Join Early Access
         </Text>
       </a>
