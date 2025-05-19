@@ -86,9 +86,19 @@ export default function Terms() {
               4. Intellectual Property
             </Heading>
             <Text as="p" size="4" mb="4">
-              All content, branding, modules (such as the G1000 and SR22
-              interfaces), and documentation made available by ZOAL remain the
-              exclusive intellectual property of ZOAL and its contributors.
+              All original software, code, visual assets, user interface design,
+              and documentation developed by ZOAL — including modules such as
+              WebGA and its supporting systems — are the exclusive intellectual
+              property of ZOAL and its contributors. However, certain visual
+              elements or interface representations within our products may be
+              inspired by real-world avionics systems or aircraft developed by
+              companies such as Garmin, Cirrus, Embraer, or others. ZOAL does
+              not claim any copyright, trademark, or intellectual property
+              ownership over these third-party systems or brands. Our work
+              represents a simulated, functional approximation for educational
+              and entertainment use within flight simulators, and is not
+              affiliated with, endorsed by, or sponsored by the original
+              manufacturers.
             </Text>
 
             <Heading as="h2" size="6" mb="3">
@@ -136,14 +146,14 @@ export default function Terms() {
               WebGA and associated modules may emulate the look and behavior of
               real-world avionics systems, including the Garmin G1000, other
               Garmin-branded technologies, and those specifically licensed to
-              aircraft manufacturers, such as the Cirrus, Embraer, etc., line of aircraft. All
-              trademarks, logos, and brand names are the property of their
-              respective owners. ZOAL makes no claim to ownership of Garmin's or any other manufacturers
-              intellectual property, and our software is not affiliated with,
-              endorsed by, or sponsored by Garmin Ltd. or any of its
-              subsidiaries. The WebGA plugin is intended solely for use within
-              flight simulator environments and does not represent or replicate
-              certified aviation systems.
+              aircraft manufacturers, such as the Cirrus, Embraer, etc., line of
+              aircraft. All trademarks, logos, and brand names are the property
+              of their respective owners. ZOAL makes no claim to ownership of
+              Garmin's or any other manufacturers intellectual property, and our
+              software is not affiliated with, endorsed by, or sponsored by
+              Garmin Ltd. or any of its subsidiaries. The WebGA plugin is
+              intended solely for use within flight simulator environments and
+              does not represent or replicate certified aviation systems.
             </Text>
           </Box>
         </Box>
