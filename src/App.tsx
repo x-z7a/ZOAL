@@ -4,6 +4,7 @@ import { Box, Flex, Heading, Text, Button } from "@radix-ui/themes";
 import { Theme } from "@radix-ui/themes";
 import { motion } from "framer-motion";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -281,28 +282,7 @@ function App() {
               />
             </Box>
           </motion.div>
-
-          <footer
-            style={{
-              borderTop: "1px solid #333",
-              padding: "2rem 1rem",
-              textAlign: "center",
-              color: "gray",
-            }}
-          >
-            <Text size="2">© {new Date().getFullYear()} ZOAL. All rights reserved.</Text>
-            <Flex gap="4" justify="center" mt="3">
-              <a href="#" style={{ color: "gray", textDecoration: "underline" }}>
-                Privacy Policy
-              </a>
-              <a href="#" style={{ color: "gray", textDecoration: "underline" }}>
-                Terms of Use
-              </a>
-              <a href="#" style={{ color: "gray", textDecoration: "underline" }}>
-                Contact
-              </a>
-            </Flex>
-          </footer>
+          <Footer />
         </Flex>
       </Box>
     </Theme>
