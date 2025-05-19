@@ -1,4 +1,3 @@
-// NavBar.tsx
 import { Link } from "react-router-dom";
 import { Flex, Text } from "@radix-ui/themes";
 
