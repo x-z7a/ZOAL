@@ -28,7 +28,7 @@ export default function Instructions() {
           <ul style={{ paddingLeft: "1.5rem", lineHeight: 2, marginTop: "1rem" }}>
             <li>
               <a
-              href="https://example.com"
+              href="https://github.com/x-z7a/webga-release/releases/latest"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "#4ea1ff", textDecoration: "underline" }}
