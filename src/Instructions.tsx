@@ -1,14 +1,14 @@
 // Instructions.tsx
-import { Box, Heading, Text } from "@radix-ui/themes";
+import {Box, Heading, Text} from "@radix-ui/themes";
 import NavBar from "./NavBar";
 import * as Accordion from "@radix-ui/react-accordion";
-import { ChevronDownIcon } from "@radix-ui/react-icons";
+import {ChevronDownIcon} from "@radix-ui/react-icons";
 import Footer from "./Footer";
 
 export default function Instructions() {
   return (
     <>
-      <NavBar />
+      <NavBar/>
       <Box
         style={{
           minHeight: "100vh",
@@ -16,58 +16,65 @@ export default function Instructions() {
           padding: "4rem 1rem",
         }}
       >
-        <Box style={{ maxWidth: "800px", margin: "0 auto", color: "white" }}>
+        <Box style={{maxWidth: "800px", margin: "0 auto", color: "white"}}>
           <Heading mt="6" as="h1" size="8" mb="4" highContrast>
             Getting Started
           </Heading>
 
-          <Text size="4" as="p" style={{ lineHeight: 1.6 }}>
+          <Text size="4" as="p" style={{lineHeight: 1.6}}>
             Welcome to the future of home cockpit interaction. Getting started
             with WebGA is simple:
           </Text>
 
-          <ul style={{ paddingLeft: "1.5rem", lineHeight: 2, marginTop: "1rem" }}>
+          <ul style={{paddingLeft: "1.5rem", lineHeight: 2, marginTop: "1rem"}}>
             <li>
               <a
-              href="https://github.com/x-z7a/webga-release/releases/latest"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#4ea1ff", textDecoration: "underline" }}
+                href="https://github.com/x-z7a/webga-release/releases/latest/download/WebGA.zip"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{color: "#4ea1ff", textDecoration: "underline"}}
               >
-              Download the latest release (WebGA.zip unless otherwise directed)
+                Download the latest release
               </a>{" "}
-              and drag it into your X-Plane 12 plugins folder like: <pre>X-Plane 12/Resources/Plugins/WebGA</pre>
+              , unzip it and drag it into your X-Plane 12 plugins folder like: <pre>X-Plane 12/Resources/Plugins/WebGA</pre>
             </li>
             <li>
               Once X-plane 12 is running, and as part of your checklist process, go to{" "}
               <a
-              href="http://localhost:8080"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#4ea1ff", textDecoration: "underline" }}
+                href="http://localhost:8080"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{color: "#4ea1ff", textDecoration: "underline"}}
               >
-              http://localhost:8080
+                http://localhost:8080
               </a>{" "}
               from your simulator machine's preferred browser
             </li>
             <li>
               On your tablet or whichever device you will use as your avionics, visit{" "}
               <a
-              href="http://webga.local:8080"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#4ea1ff", textDecoration: "underline" }}
+                href="http://webga.local:8080"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{color: "#4ea1ff", textDecoration: "underline"}}
               >
-              webga.local:8080
-              </a>{" "}
-              (if using an Apple device) or{" "}
+                webga.local:8080
+              </a>
+              <span className="tooltip-container">
+                <span className="tooltip-icon">ⓘ</span>
+                <span className="tooltip-text">
+                  ".local" lets your device find others on the same Wi-Fi by name (e.g., "webga.local")
+                  instead of needing the IP address. Supported on Apple and newer Android devices.
+                </span>
+              </span>
+               (When using an Apple device or an Android device released after 2021) or{" "}
               <a
-              href="http://&lt;your-machine-ip-address&gt;:8080"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#4ea1ff", textDecoration: "underline" }}
+                href="http://&lt;your-machine-ip-address&gt;:8080"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{color: "#4ea1ff", textDecoration: "underline"}}
               >
-              {"<your machine IP address>:8080"}
+                {"<your machine IP address>:8080"}
               </a>
             </li>
           </ul>
@@ -76,7 +83,7 @@ export default function Instructions() {
             More Detailed Instructions
           </Heading>
 
-          <Text size="4" as="p" style={{ lineHeight: 1.6 }}>
+          <Text size="4" as="p" style={{lineHeight: 1.6}}>
             For those who prefer a more detailed guide, we have provided a comprehensive
             set of instructions. This includes step-by-step guidance on how to set up
             your system, configure your devices, and optimize your experience with WebGA.
@@ -103,7 +110,7 @@ export default function Instructions() {
                     }}
                   >
                     Sample Item 1
-                    <ChevronDownIcon />
+                    <ChevronDownIcon/>
                   </Accordion.Trigger>
                 </Accordion.Header>
                 <Accordion.Content
@@ -138,7 +145,7 @@ export default function Instructions() {
                     }}
                   >
                     Sample Item 2
-                    <ChevronDownIcon />
+                    <ChevronDownIcon/>
                   </Accordion.Trigger>
                 </Accordion.Header>
                 <Accordion.Content
@@ -173,7 +180,7 @@ export default function Instructions() {
                     }}
                   >
                     Sample Item 3
-                    <ChevronDownIcon />
+                    <ChevronDownIcon/>
                   </Accordion.Trigger>
                 </Accordion.Header>
                 <Accordion.Content
@@ -192,7 +199,7 @@ export default function Instructions() {
           </Box>
         </Box>
       </Box>
-        <Footer />
+      <Footer/>
     </>
   );
 }
