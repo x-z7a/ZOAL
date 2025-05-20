@@ -32,7 +32,7 @@ export default function NavBar() {
       </Link>
 
       <a
-        href="https://zoal.gumroad.com/l/WebGA"
+        href="https://store.zoal.app"
         target="_blank"
         rel="noopener noreferrer"
         style={{ color: "white", textDecoration: "none" }}
