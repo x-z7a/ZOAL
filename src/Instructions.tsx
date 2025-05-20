@@ -3,6 +3,7 @@ import { Box, Heading, Text } from "@radix-ui/themes";
 import NavBar from "./NavBar";
 import * as Accordion from "@radix-ui/react-accordion";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
+import Footer from "./Footer";
 
 export default function Instructions() {
   return (
@@ -191,6 +192,7 @@ export default function Instructions() {
           </Box>
         </Box>
       </Box>
+        <Footer />
     </>
   );
 }

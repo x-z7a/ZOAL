@@ -6,6 +6,7 @@ import App from "./App.tsx";
 import Instructions from "./Instructions.tsx";
 import Privacy from "./Privacy";
 import Terms from "./Terms";
+import ScrollToTop from "./ScrollToTop..tsx";
 import Contact from "./Contact.tsx";
 import { StrictMode } from "react";
 import { Theme } from "@radix-ui/themes";
@@ -13,6 +14,7 @@ import { Theme } from "@radix-ui/themes";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Theme
         appearance="dark"
         accentColor="indigo"
