@@ -5,7 +5,6 @@ import { Theme } from "@radix-ui/themes";
 import { motion } from "framer-motion";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import ScrollToTop from "./ScrollToTop.";
 
 function App() {
   return (
