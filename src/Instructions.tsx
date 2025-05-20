@@ -61,7 +61,7 @@ export default function Instructions() {
                 webga.local:8080
               </a>
               <span className="tooltip-container">
-                <span className="tooltip-icon">ⓘ</span>
+                <span className="tooltip-icon">(what's this?) &nbsp;</span>
                 <span className="tooltip-text">
                   ".local" lets your device find others on the same Wi-Fi by name (e.g., "webga.local")
                   instead of needing the IP address. Supported on Apple and newer Android devices.
