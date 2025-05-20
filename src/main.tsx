@@ -11,10 +11,10 @@ import Contact from "./Contact.tsx";
 import { StrictMode } from "react";
 import { Theme } from "@radix-ui/themes";
 
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
-      <ScrollToTop />
       <Theme
         appearance="dark"
         accentColor="indigo"
@@ -22,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         radius="large"
         scaling="100%"
       >
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/instructions" element={<Instructions />} />
