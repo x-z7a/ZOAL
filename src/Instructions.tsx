@@ -33,7 +33,7 @@ export default function Instructions() {
               rel="noopener noreferrer"
               style={{ color: "#4ea1ff", textDecoration: "underline" }}
               >
-              Download the latest release
+              Download the latest release (WebGA.zip unless otherwise directed)
               </a>{" "}
               and drag it into your X-Plane 12 plugins folder like: <pre>X-Plane 12/Resources/Plugins/WebGA</pre>
             </li>
