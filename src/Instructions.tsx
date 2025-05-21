@@ -109,7 +109,7 @@ export default function Instructions() {
                       marginBottom: "0.5rem",
                     }}
                   >
-                    Sample Item 1
+                    Download and Installation
                     <ChevronDownIcon/>
                   </Accordion.Trigger>
                 </Accordion.Header>
@@ -122,7 +122,23 @@ export default function Instructions() {
                     marginBottom: "1rem",
                   }}
                 >
-                  Placeholder content for sample item 1.
+                  <p>Download and installation is easy. Just follow the steps in the video below.</p>
+                  <Box style={{position: "relative", paddingBottom: "56.25%", height: 0, marginBottom: "1rem"}}>
+                    <iframe
+                      src="https://www.loom.com/embed/1d3574bc27db4b48a0007dc4732cd5ea?sid=4baf7bfd-e5a3-4e4c-b4ae-dc4cca76e92a"
+                      frameBorder="0"
+                      allowFullScreen
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: "8px",
+                      }}
+                      title="WebGA Download and Installation Video"
+                    />
+                  </Box>
                 </Accordion.Content>
               </Accordion.Item>
 
