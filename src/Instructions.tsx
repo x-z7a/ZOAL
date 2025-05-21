@@ -1,14 +1,14 @@
 // Instructions.tsx
-import {Box, Heading, Text} from "@radix-ui/themes";
+import { Box, Heading, Text } from "@radix-ui/themes";
 import NavBar from "./NavBar";
 import * as Accordion from "@radix-ui/react-accordion";
-import {ChevronDownIcon} from "@radix-ui/react-icons";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
 import Footer from "./Footer";
 
 export default function Instructions() {
   return (
     <>
-      <NavBar/>
+      <NavBar />
       <Box
         style={{
           minHeight: "100vh",
@@ -16,63 +16,70 @@ export default function Instructions() {
           padding: "4rem 1rem",
         }}
       >
-        <Box style={{maxWidth: "800px", margin: "0 auto", color: "white"}}>
+        <Box style={{ maxWidth: "800px", margin: "0 auto", color: "white" }}>
           <Heading mt="6" as="h1" size="8" mb="4" highContrast>
             Getting Started
           </Heading>
 
-          <Text size="4" as="p" style={{lineHeight: 1.6}}>
+          <Text size="4" as="p" style={{ lineHeight: 1.6 }}>
             Welcome to the future of home cockpit interaction. Getting started
             with WebGA is simple:
           </Text>
 
-          <ul style={{paddingLeft: "1.5rem", lineHeight: 2, marginTop: "1rem"}}>
+          <ul
+            style={{ paddingLeft: "1.5rem", lineHeight: 2, marginTop: "1rem" }}
+          >
             <li>
               <a
                 href="https://github.com/x-z7a/webga-release/releases/latest/download/WebGA.zip"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{color: "#4ea1ff", textDecoration: "underline"}}
+                style={{ color: "#4ea1ff", textDecoration: "underline" }}
               >
                 Download the latest release
               </a>{" "}
-              , unzip it and drag it into your X-Plane 12 plugins folder like: <pre>X-Plane 12/Resources/Plugins/WebGA</pre>
+              , unzip it and drag it into your X-Plane 12 plugins folder like:{" "}
+              <pre>X-Plane 12/Resources/Plugins/WebGA</pre>
             </li>
             <li>
-              Once X-plane 12 is running, and as part of your checklist process, go to{" "}
+              Once X-plane 12 is running, and as part of your checklist process,
+              go to{" "}
               <a
                 href="http://localhost:8080"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{color: "#4ea1ff", textDecoration: "underline"}}
+                style={{ color: "#4ea1ff", textDecoration: "underline" }}
               >
                 http://localhost:8080
               </a>{" "}
               from your simulator machine's preferred browser
             </li>
             <li>
-              On your tablet or whichever device you will use as your avionics, visit{" "}
+              On your tablet or whichever device you will use as your avionics,
+              visit{" "}
               <a
                 href="http://webga.local:8080"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{color: "#4ea1ff", textDecoration: "underline"}}
+                style={{ color: "#4ea1ff", textDecoration: "underline" }}
               >
                 webga.local:8080
               </a>
               <span className="tooltip-container">
                 <span className="tooltip-icon">(what's this?) &nbsp;</span>
                 <span className="tooltip-text">
-                  ".local" lets your device find others on the same Wi-Fi by name (e.g., "webga.local")
-                  instead of needing the IP address. Supported on Apple and newer Android devices.
+                  ".local" lets your device find others on the same Wi-Fi by
+                  name (e.g., "webga.local") instead of needing the IP address.
+                  Supported on Apple and newer Android devices.
                 </span>
               </span>
-               (When using an Apple device or an Android device released after 2021) or{" "}
+              (When using an Apple device or an Android device released after
+              2021) or{" "}
               <a
                 href="http://&lt;your-machine-ip-address&gt;:8080"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{color: "#4ea1ff", textDecoration: "underline"}}
+                style={{ color: "#4ea1ff", textDecoration: "underline" }}
               >
                 {"<your machine IP address>:8080"}
               </a>
@@ -83,15 +90,19 @@ export default function Instructions() {
             More Detailed Instructions
           </Heading>
 
-          <Text size="4" as="p" style={{lineHeight: 1.6}}>
-            For those who prefer a more detailed guide, we have provided a comprehensive
-            set of instructions. This includes step-by-step guidance on how to set up
-            your system, configure your devices, and optimize your experience with WebGA.
+          <Text size="4" as="p" style={{ lineHeight: 1.6 }}>
+            For those who prefer a more detailed guide, we have provided a
+            comprehensive set of instructions. This includes step-by-step
+            guidance on how to set up your system, configure your devices, and
+            optimize your experience with WebGA.
+          </Text>
+          <Text mt="4" size="4" as="p" style={{ lineHeight: 1.6 }}>
+            <strong>Note:</strong> The visuals and layout of WebGA in the videos below may be different than your version. That being said, the processes should remain the same. We'll do our best to update the videos with each major WebGA release.
           </Text>
 
           <Box mt="6">
             <Accordion.Root type="single" collapsible>
-              <Accordion.Item value="item-1">
+              <Accordion.Item value="download-and-installation">
                 <Accordion.Header>
                   <Accordion.Trigger
                     style={{
@@ -110,7 +121,7 @@ export default function Instructions() {
                     }}
                   >
                     Download and Installation
-                    <ChevronDownIcon/>
+                    <ChevronDownIcon />
                   </Accordion.Trigger>
                 </Accordion.Header>
                 <Accordion.Content
@@ -122,8 +133,18 @@ export default function Instructions() {
                     marginBottom: "1rem",
                   }}
                 >
-                  <p>Download and installation is easy. Just follow the steps in the video below.</p>
-                  <Box style={{position: "relative", paddingBottom: "56.25%", height: 0, marginBottom: "1rem"}}>
+                  <p>
+                    Download and installation is easy. Just follow the steps in
+                    the video below.
+                  </p>
+                  <Box
+                    style={{
+                      position: "relative",
+                      paddingBottom: "56.25%",
+                      height: 0,
+                      marginBottom: "1rem",
+                    }}
+                  >
                     <iframe
                       src="https://www.loom.com/embed/1d3574bc27db4b48a0007dc4732cd5ea?sid=4baf7bfd-e5a3-4e4c-b4ae-dc4cca76e92a"
                       frameBorder="0"
@@ -142,7 +163,7 @@ export default function Instructions() {
                 </Accordion.Content>
               </Accordion.Item>
 
-              <Accordion.Item value="item-2">
+              <Accordion.Item value="loading-webga">
                 <Accordion.Header>
                   <Accordion.Trigger
                     style={{
@@ -160,8 +181,8 @@ export default function Instructions() {
                       marginBottom: "0.5rem",
                     }}
                   >
-                    Sample Item 2
-                    <ChevronDownIcon/>
+                    Loading WebGA for the first time
+                    <ChevronDownIcon />
                   </Accordion.Trigger>
                 </Accordion.Header>
                 <Accordion.Content
@@ -173,7 +194,30 @@ export default function Instructions() {
                     marginBottom: "1rem",
                   }}
                 >
-                  Placeholder content for sample item 2.
+                  <p>Running WebGA for the first time is pretty easy, and once you watch this video - you'll be a pro!</p>
+                  <Box
+                    style={{
+                      position: "relative",
+                      paddingBottom: "56.25%",
+                      height: 0,
+                      marginBottom: "1rem",
+                    }}
+                  >
+                    <iframe
+                      src="https://www.loom.com/embed/e83e91fe0d984388920a478f4b4e7579?sid=8b5838f7-7951-4619-a01d-a3f8066eadb1"
+                      frameBorder="0"
+                      allowFullScreen
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: "8px",
+                      }}
+                      title="WebGA Loading for the First Time Video"
+                    />
+                  </Box>
                 </Accordion.Content>
               </Accordion.Item>
 
@@ -196,7 +240,7 @@ export default function Instructions() {
                     }}
                   >
                     Sample Item 3
-                    <ChevronDownIcon/>
+                    <ChevronDownIcon />
                   </Accordion.Trigger>
                 </Accordion.Header>
                 <Accordion.Content
@@ -215,7 +259,7 @@ export default function Instructions() {
           </Box>
         </Box>
       </Box>
-      <Footer/>
+      <Footer />
     </>
   );
 }
