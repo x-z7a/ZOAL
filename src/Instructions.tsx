@@ -195,6 +195,8 @@ export default function Instructions() {
                   }}
                 >
                   <p>Running WebGA for the first time is pretty easy, and once you watch this video - you'll be a pro!</p>
+                  <p><strong>Key Notes:</strong> From your simulator machine, access <strong>localhost:8080</strong> in the browser</p>
+                  <p>From your iPad or tablet, access either <strong>webga.local:8080</strong> (if your device supports it) or <strong>yoursimulatoripaddress:8080</strong></p>
                   <Box
                     style={{
                       position: "relative",
