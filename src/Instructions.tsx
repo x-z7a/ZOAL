@@ -197,7 +197,8 @@ export default function Instructions() {
                   <p>Running WebGA for the first time is pretty easy, and once you watch this video - you'll be a pro!</p>
                   <p><strong>Key Notes:</strong> From your simulator machine, access <strong>localhost:8080</strong> in the browser</p>
                   <p>From your iPad or tablet, access either <strong>webga.local:8080</strong> (if your device supports it) or <strong>yoursimulatoripaddress:8080</strong></p>
-                  <Box
+                  <Box py="4"><h3>Getting Started</h3></Box>
+                  <Box mb="4"
                     style={{
                       position: "relative",
                       paddingBottom: "56.25%",
@@ -219,6 +220,33 @@ export default function Instructions() {
                       }}
                       title="WebGA Loading for the First Time Video"
                     />
+                  </Box>
+                  <Box py="4"><h3>From your iPad or Tablet</h3></Box>
+                    <Box mb="4"
+                    style={{
+                      position: "relative",
+                      paddingBottom: "56.25%",
+                      height: 0,
+                      marginBottom: "1rem",
+                    }}
+                  >
+                    <iframe
+                      src="https://www.youtube.com/embed/LZyPVmtVpI8?si=YKOg99zSmaK12Jl5"
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: "8px",
+                      }}
+                    />
+
                   </Box>
                 </Accordion.Content>
               </Accordion.Item>
