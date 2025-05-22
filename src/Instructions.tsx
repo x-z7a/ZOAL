@@ -85,7 +85,7 @@ export default function Instructions() {
               </a>
             </li>
           </ul>
-
+{/* instructions */}
           <Heading as="h2" size="6" mt="6" mb="2" highContrast>
             More Detailed Instructions
           </Heading>
@@ -147,6 +147,202 @@ export default function Instructions() {
                   >
                     <iframe
                       src="https://www.loom.com/embed/1d3574bc27db4b48a0007dc4732cd5ea?sid=4baf7bfd-e5a3-4e4c-b4ae-dc4cca76e92a"
+                      frameBorder="0"
+                      allowFullScreen
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: "8px",
+                      }}
+                      title="WebGA Download and Installation Video"
+                    />
+                  </Box>
+                </Accordion.Content>
+              </Accordion.Item>
+
+              <Accordion.Item value="loading-webga">
+                <Accordion.Header>
+                  <Accordion.Trigger
+                    style={{
+                      all: "unset",
+                      backgroundColor: "#2c2c2c",
+                      color: "white",
+                      padding: "1rem",
+                      width: "100%",
+                      textAlign: "left",
+                      borderRadius: "8px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      cursor: "pointer",
+                      marginBottom: "0.5rem",
+                    }}
+                  >
+                    Loading WebGA for the first time
+                    <ChevronDownIcon />
+                  </Accordion.Trigger>
+                </Accordion.Header>
+                <Accordion.Content
+                  style={{
+                    backgroundColor: "#1e1e1e",
+                    color: "#ccc",
+                    padding: "1rem",
+                    borderRadius: "8px",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  <p>Running WebGA for the first time is pretty easy, and once you watch this video - you'll be a pro!</p>
+                  <p><strong>Key Notes:</strong> From your simulator machine, access <strong>localhost:8080</strong> in the browser</p>
+                  <p>From your iPad or tablet, access either <strong>webga.local:8080</strong> (if your device supports it) or <strong>yoursimulatoripaddress:8080</strong></p>
+                  <Box py="4"><h3>Getting Started</h3></Box>
+                  <Box mb="4"
+                    style={{
+                      position: "relative",
+                      paddingBottom: "56.25%",
+                      height: 0,
+                      marginBottom: "1rem",
+                    }}
+                  >
+                    <iframe
+                      src="https://www.loom.com/embed/e83e91fe0d984388920a478f4b4e7579?sid=8b5838f7-7951-4619-a01d-a3f8066eadb1"
+                      frameBorder="0"
+                      allowFullScreen
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: "8px",
+                      }}
+                      title="WebGA Loading for the First Time Video"
+                    />
+                  </Box>
+                  <Box py="4"><h3>From your iPad or Tablet</h3></Box>
+                    <Box mb="4"
+                    style={{
+                      position: "relative",
+                      paddingBottom: "56.25%",
+                      height: 0,
+                      marginBottom: "1rem",
+                    }}
+                  >
+                    <iframe
+                      src="https://www.youtube.com/embed/LZyPVmtVpI8?si=YKOg99zSmaK12Jl5"
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: "8px",
+                      }}
+                    />
+
+                  </Box>
+                </Accordion.Content>
+              </Accordion.Item>
+
+              <Accordion.Item value="item-3">
+                <Accordion.Header>
+                  <Accordion.Trigger
+                    style={{
+                      all: "unset",
+                      backgroundColor: "#2c2c2c",
+                      color: "white",
+                      padding: "1rem",
+                      width: "100%",
+                      textAlign: "left",
+                      borderRadius: "8px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      cursor: "pointer",
+                      marginBottom: "0.5rem",
+                    }}
+                  >
+                    Sample Item 3
+                    <ChevronDownIcon />
+                  </Accordion.Trigger>
+                </Accordion.Header>
+                <Accordion.Content
+                  style={{
+                    backgroundColor: "#1e1e1e",
+                    color: "#ccc",
+                    padding: "1rem",
+                    borderRadius: "8px",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  Placeholder content for sample item 3.
+                </Accordion.Content>
+              </Accordion.Item>
+            </Accordion.Root>
+          </Box>
+          {/* faq */}
+          <Heading as="h2" size="6" mt="6" mb="2" highContrast>
+           Frequently Asked Questions
+          </Heading>
+
+          <Text size="4" as="p" style={{ lineHeight: 1.6 }}>
+            We get questions from time to time about some quirks. Here, we attempt to answer some of those the most commonly asked questions.
+          </Text>
+          
+
+          <Box mt="6">
+            <Accordion.Root type="single" collapsible>
+              <Accordion.Item value="resize-the-window">
+                <Accordion.Header>
+                  <Accordion.Trigger
+                    style={{
+                      all: "unset",
+                      backgroundColor: "#2c2c2c",
+                      color: "white",
+                      padding: "1rem",
+                      width: "100%",
+                      textAlign: "left",
+                      borderRadius: "8px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      cursor: "pointer",
+                      marginBottom: "0.5rem",
+                    }}
+                  >
+                    My stream isn't sized properly, what do I do?
+                    <ChevronDownIcon />
+                  </Accordion.Trigger>
+                </Accordion.Header>
+                <Accordion.Content
+                  style={{
+                    backgroundColor: "#1e1e1e",
+                    color: "#ccc",
+                    padding: "1rem",
+                    borderRadius: "8px",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  <p>
+                    This is most commonly caused by the popped out window not being sized correctly. Watch this video to see how to fix this.
+                  </p>
+                  <Box
+                    style={{
+                      position: "relative",
+                      paddingBottom: "56.25%",
+                      height: 0,
+                      marginBottom: "1rem",
+                    }}
+                  >
+                    <iframe
+                      src="https://www.loom.com/embed/6259530563ff42999b8ab1b84d64132f?sid=12d6bd0a-032d-439e-817b-edab2dc4bd51"
                       frameBorder="0"
                       allowFullScreen
                       style={{
