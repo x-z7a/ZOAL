@@ -269,7 +269,7 @@ export default function Instructions() {
                       marginBottom: "0.5rem",
                     }}
                   >
-                    Sample Item 3
+                    Another Coming Soon
                     <ChevronDownIcon />
                   </Accordion.Trigger>
                 </Accordion.Header>
@@ -282,13 +282,13 @@ export default function Instructions() {
                     marginBottom: "1rem",
                   }}
                 >
-                  Placeholder content for sample item 3.
+                  Another Coming Soon!
                 </Accordion.Content>
               </Accordion.Item>
             </Accordion.Root>
           </Box>
           {/* faq */}
-          <Heading as="h2" size="6" mt="6" mb="2" highContrast>
+          <Heading as="h2" size="6" mt="9" mb="2" highContrast>
            Frequently Asked Questions
           </Heading>
 
@@ -377,7 +377,7 @@ export default function Instructions() {
                       marginBottom: "0.5rem",
                     }}
                   >
-                    Loading WebGA for the first time
+                    Another Coming Soon
                     <ChevronDownIcon />
                   </Accordion.Trigger>
                 </Accordion.Header>
@@ -465,7 +465,7 @@ export default function Instructions() {
                       marginBottom: "0.5rem",
                     }}
                   >
-                    Sample Item 3
+                    Another Coming Soon
                     <ChevronDownIcon />
                   </Accordion.Trigger>
                 </Accordion.Header>
@@ -478,7 +478,7 @@ export default function Instructions() {
                     marginBottom: "1rem",
                   }}
                 >
-                  Placeholder content for sample item 3.
+                  Another Coming Soon
                 </Accordion.Content>
               </Accordion.Item>
             </Accordion.Root>
