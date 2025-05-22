@@ -178,14 +178,14 @@ function App() {
               viewport={{once: true, amount: 0.4}}
               transition={{duration: 1.1, ease: "easeOut", delay: 0.2}}
             >
-              <Button
+                <Button
                 size="4"
                 color="sky"
                 variant="solid"
-                onClick={() => window.open("https://example.com", "_blank")}
-              >
+                onClick={() => window.location.href = "/instructions"}
+                >
                 See It In Action
-              </Button>
+                </Button>
             </motion.div>
           </motion.div>
 
