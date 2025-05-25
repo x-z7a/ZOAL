@@ -182,6 +182,7 @@ function App() {
                 size="4"
                 color="sky"
                 variant="solid"
+                mt="8"
                 onClick={() => window.location.href = "/instructions"}
                 >
                 See It In Action
