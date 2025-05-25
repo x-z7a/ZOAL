@@ -31,6 +31,16 @@ export default function NavBar() {
         </Text>
       </Link>
 
+            <Link
+        to="/documentation"
+        style={{ color: "white", textDecoration: "none" }}
+      >
+        <Text size="4" weight="regular">
+          Documentation
+        </Text>
+      </Link>
+      
+
       <a
         href="https://store.zoal.app"
         target="_blank"
