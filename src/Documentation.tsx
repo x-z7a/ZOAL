@@ -51,7 +51,7 @@ export default function Documentation() {
                   <Accordion.Trigger
                     style={accordionTriggerStyle}
                   >
-                    Network Configuration
+                    Network & Port Configuration
                     <ChevronDownIcon />
                   </Accordion.Trigger>
                 </Accordion.Header>
