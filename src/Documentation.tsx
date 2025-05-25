@@ -59,26 +59,26 @@ export default function Documentation() {
                   <p>
                     After installing WebGA correctly into the{" "}
                     <code>X-Plane 12/Resources/Plugins</code> folder, and running X-Plane for the first time, a <code>config.txt</code> file
-                    will be automatically created in the root directory of <code>WebGA</code>.
+                    will be automatically created in the root directory of <code>WebGA</code>.<br />
                   </p>
                   <p>
                     You can find this file at: <br />
-                    <code>X-Plane 12/Resources/plugins/WebGA/config.txt</code>
+                    <code>X-Plane 12/Resources/plugins/WebGA/config.txt</code><br />
                   </p>
                   <p>
                     To change the port WebGA uses, open <code>config.txt</code>{" "}
-                    in a text editor and update the port number as needed.
+                    in a text editor and update the port number as needed.<br />
                   </p>
                   <p>
                     <strong>Important:</strong> After making changes, make sure
                     to <strong>save the file</strong> and then{" "}
                     <strong>restart X-Plane</strong> for the new port to take
-                    effect.
+                    effect.<br />
                   </p>
                   <p>
                     Your custom port setting will persist between sessions. You
                     only need to change it again if you have a specific reason
-                    to do so.
+                    to do so.<br />
                   </p>
                   <h2>Or check out this video for step by step instructions</h2>
                   <Box
