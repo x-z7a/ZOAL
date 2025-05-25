@@ -39,7 +39,8 @@ export default function Documentation() {
                 <Accordion.Content style={accordionContentStyle}>
                   <ul>
                     <li>X-Plane 12 (tested with version 12.0.9 and above)</li>
-                    <li>Modern web browser (Chrome, Safari, Edge)</li>
+                    <li>Brave Browser, Chrome, Firefox</li>
+                    <li><strong>We have noted issues with Safari on the host machine</strong></li>
                     <li>
                       Device on same network (local Wi-Fi) for tablet control
                     </li>
