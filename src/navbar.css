@@ -40,7 +40,7 @@ p {
 	line-height: 1;
 	border-radius: 4px;
 	font-size: 20px;
-	color: var(--violet-11);
+	color: #3498db;
 }
 .NavigationMenuTrigger:focus,
 .NavigationMenuLink:focus {
