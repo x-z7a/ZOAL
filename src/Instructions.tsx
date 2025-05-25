@@ -41,6 +41,7 @@ export default function Instructions() {
               , unzip it and drag it into your X-Plane 12 plugins folder like:{" "}
               <pre>X-Plane 12/Resources/Plugins/WebGA</pre>
             </li>
+            <li>Free Trial: You will have unlimited time experimenting with WebGA if using the defaul Laminar C172 G1000.</li>
             <li>
               Once X-plane 12 is running, and as part of your checklist process,
               go to{" "}
