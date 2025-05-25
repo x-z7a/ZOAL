@@ -20,7 +20,7 @@ const NavBar = () => {
         {/* Help dropdown */}
         <NavigationMenu.Item>
           <NavigationMenu.Trigger className="NavigationMenuTrigger">
-            Help <CaretDownIcon className="CaretDown" aria-hidden />
+            Get Started For Free <CaretDownIcon className="CaretDown" aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
             <ul className="List">
