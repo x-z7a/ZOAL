@@ -40,7 +40,11 @@ export default function Documentation() {
                   <ul>
                     <li>X-Plane 12 (tested with version 12.0.9 and above)</li>
                     <li>Brave Browser, Chrome, Firefox</li>
-                    <li><strong>We have noted issues with Safari on the host machine</strong></li>
+                    <li>
+                      <strong>
+                        We have noted issues with Safari on the host machine
+                      </strong>
+                    </li>
                     <li>
                       Device on same network (local Wi-Fi) for tablet control
                     </li>
@@ -56,30 +60,37 @@ export default function Documentation() {
                   </Accordion.Trigger>
                 </Accordion.Header>
                 <Accordion.Content style={accordionContentStyle}>
-                  <p>
-                    After installing WebGA correctly into the{" "}
-                    <code>X-Plane 12/Resources/Plugins</code> folder, and running X-Plane for the first time, a <code>config.txt</code> file
-                    will be automatically created in the root directory of <code>WebGA</code>.<br />
-                  </p>
-                  <p>
-                    You can find this file at: <br />
-                    <code>X-Plane 12/Resources/plugins/WebGA/config.txt</code><br />
-                  </p>
-                  <p>
-                    To change the port WebGA uses, open <code>config.txt</code>{" "}
-                    in a text editor and update the port number as needed.<br />
-                  </p>
-                  <p>
-                    <strong>Important:</strong> After making changes, make sure
-                    to <strong>save the file</strong> and then{" "}
-                    <strong>restart X-Plane</strong> for the new port to take
-                    effect.<br />
-                  </p>
-                  <p>
-                    Your custom port setting will persist between sessions. You
-                    only need to change it again if you have a specific reason
-                    to do so.<br />
-                  </p>
+                  <ul>
+                    <li>
+                      After installing WebGA into the{" "}
+                      <code>X-Plane 12/Resources/Plugins</code> folder and
+                      running X-Plane for the first time, a{" "}
+                      <code>config.txt</code> file will be automatically created
+                      in the root directory of <code>WebGA</code>.
+                    </li>
+                    <li>
+                      You can find this file at:
+                      <br />
+                      <code>X-Plane 12/Resources/plugins/WebGA/config.txt</code>
+                    </li>
+                    <li>
+                      To change the port WebGA uses, open{" "}
+                      <code>config.txt</code> in a text editor and update the
+                      port number as needed.
+                    </li>
+                    <li>
+                      <strong>Important:</strong> After making changes, make
+                      sure to <strong>save the file</strong> and then{" "}
+                      <strong>restart X-Plane</strong> for the new port to take
+                      effect.
+                    </li>
+                    <li>
+                      Your custom port setting will persist between sessions.
+                      You only need to change it again if you have a specific
+                      reason to do so.
+                    </li>
+                  </ul>
+
                   <h2>Or check out this video for step by step instructions</h2>
                   <Box
                     style={{
@@ -104,9 +115,6 @@ export default function Documentation() {
                       title="WebGA Download and Installation Video"
                     />
                   </Box>
-             
-                        
-                 
                 </Accordion.Content>
               </Accordion.Item>
 
