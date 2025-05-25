@@ -2,7 +2,7 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { CaretDownIcon } from "@radix-ui/react-icons";
 import { Link } from "react-router-dom";
 // import classNames from "classnames";
-import "./NavBar.css";
+import "./navbar.css"; 
 
 const NavBar = () => {
   return (
