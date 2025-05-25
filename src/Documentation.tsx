@@ -22,17 +22,16 @@ export default function Documentation() {
           </Heading>
 
           <Text size="4" as="p" style={{ lineHeight: 1.6 }}>
-            This page provides technical documentation for installing, configuring,
-            and extending WebGA. Ideal for developers, advanced simmers, and cockpit builders.
+            This page provides technical documentation for installing,
+            configuring, and extending WebGA. Ideal for developers, advanced
+            simmers, and cockpit builders.
           </Text>
 
           <Box mt="6">
             <Accordion.Root type="single" collapsible>
               <Accordion.Item value="system-requirements">
                 <Accordion.Header>
-                  <Accordion.Trigger
-                    style={accordionTriggerStyle}
-                  >
+                  <Accordion.Trigger style={accordionTriggerStyle}>
                     System Requirements & Compatibility
                     <ChevronDownIcon />
                   </Accordion.Trigger>
@@ -41,59 +40,75 @@ export default function Documentation() {
                   <ul>
                     <li>X-Plane 12 (tested with version 12.0.9 and above)</li>
                     <li>Modern web browser (Chrome, Safari, Edge)</li>
-                    <li>Device on same network (local Wi-Fi) for tablet control</li>
+                    <li>
+                      Device on same network (local Wi-Fi) for tablet control
+                    </li>
                   </ul>
                 </Accordion.Content>
               </Accordion.Item>
 
               <Accordion.Item value="network-configuration">
                 <Accordion.Header>
-                  <Accordion.Trigger
-                    style={accordionTriggerStyle}
-                  >
+                  <Accordion.Trigger style={accordionTriggerStyle}>
                     Network & Port Configuration
                     <ChevronDownIcon />
                   </Accordion.Trigger>
                 </Accordion.Header>
                 <Accordion.Content style={accordionContentStyle}>
                   <p>
-                    WebGA runs a local server on port 8080. Make sure your firewall
-                    allows this port, and that your tablet or other device can access
-                    your simulator machine via IP or .local hostname.
+                    After installing WebGA correctly into the{" "}
+                    <code>X-Plane 12/Resources/Plugins</code> folder, and running X-Plane for the first time, a <code>config.txt</code> file
+                    will be automatically created in the root directory of <code>WebGA</code>.
+                  </p>
+                  <p>
+                    You can find this file at: <br />
+                    <code>X-Plane 12/Resources/plugins/WebGA/config.txt</code>
+                  </p>
+                  <p>
+                    To change the port WebGA uses, open <code>config.txt</code>{" "}
+                    in a text editor and update the port number as needed.
+                  </p>
+                  <p>
+                    <strong>Important:</strong> After making changes, make sure
+                    to <strong>save the file</strong> and then{" "}
+                    <strong>restart X-Plane</strong> for the new port to take
+                    effect.
+                  </p>
+                  <p>
+                    Your custom port setting will persist between sessions. You
+                    only need to change it again if you have a specific reason
+                    to do so.
                   </p>
                 </Accordion.Content>
               </Accordion.Item>
 
               <Accordion.Item value="customizing-layouts">
                 <Accordion.Header>
-                  <Accordion.Trigger
-                    style={accordionTriggerStyle}
-                  >
+                  <Accordion.Trigger style={accordionTriggerStyle}>
                     Customizing Panel Layouts
                     <ChevronDownIcon />
                   </Accordion.Trigger>
                 </Accordion.Header>
                 <Accordion.Content style={accordionContentStyle}>
                   <p>
-                    Layouts are stored in <code>config/panels.json</code>. You can
-                    define new views, re-order components, or assign them to specific
-                    aircraft profiles.
+                    Layouts are stored in <code>config/panels.json</code>. You
+                    can define new views, re-order components, or assign them to
+                    specific aircraft profiles.
                   </p>
                 </Accordion.Content>
               </Accordion.Item>
 
               <Accordion.Item value="developer-api">
                 <Accordion.Header>
-                  <Accordion.Trigger
-                    style={accordionTriggerStyle}
-                  >
+                  <Accordion.Trigger style={accordionTriggerStyle}>
                     Developer API (Experimental)
                     <ChevronDownIcon />
                   </Accordion.Trigger>
                 </Accordion.Header>
                 <Accordion.Content style={accordionContentStyle}>
                   <p>
-                    WebGA exposes a small JavaScript API at <code>window.webga</code>
+                    WebGA exposes a small JavaScript API at{" "}
+                    <code>window.webga</code>
                     which allows you to interact with stream state, panels, and
                     event listeners. More documentation coming soon.
                   </p>
@@ -102,16 +117,19 @@ export default function Documentation() {
 
               <Accordion.Item value="faq">
                 <Accordion.Header>
-                  <Accordion.Trigger
-                    style={accordionTriggerStyle}
-                  >
+                  <Accordion.Trigger style={accordionTriggerStyle}>
                     FAQ
                     <ChevronDownIcon />
                   </Accordion.Trigger>
                 </Accordion.Header>
                 <Accordion.Content style={accordionContentStyle}>
-                  <p><strong>Q:</strong> Can I use WebGA remotely over the internet?<br />
-                  <strong>A:</strong> WebGA is designed for LAN use only. Remote access is not recommended without tunneling.</p>
+                  <p>
+                    <strong>Q:</strong> Can I use WebGA remotely over the
+                    internet?
+                    <br />
+                    <strong>A:</strong> WebGA is designed for LAN use only.
+                    Remote access is not recommended without tunneling.
+                  </p>
                 </Accordion.Content>
               </Accordion.Item>
             </Accordion.Root>
