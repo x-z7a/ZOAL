@@ -294,9 +294,9 @@ export default function Instructions() {
           </Heading>
 
           <Text size="4" as="p" style={{ lineHeight: 1.6 }}>
-            We get questions from time to time about some quirks. Here, we attempt to answer some of those the most commonly asked questions.
+            We get questions from time to time about some quirks. Here, we attempt to answer some of the most commonly asked questions.
           </Text>
-          
+
 
           <Box mt="6">
             <Accordion.Root type="single" collapsible>
