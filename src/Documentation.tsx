@@ -28,7 +28,7 @@ export default function Documentation() {
           </Text>
 
           <Box mt="6">
-            <Accordion.Root type="single" collapsible>
+            <Accordion.Root defaultValue="network-configuration" type="single" collapsible>
               <Accordion.Item value="system-requirements">
                 <Accordion.Header>
                   <Accordion.Trigger style={accordionTriggerStyle}>
