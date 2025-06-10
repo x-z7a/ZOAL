@@ -63,18 +63,41 @@ function App() {
             Bring your simulation to life with WebGA.
           </Text>
 
-          <Button
-            size="4"
-            color="sky"
-            mt="6"
-            variant="solid"
-            style={{animation: "fadeInUp 2.2s ease-out both"}}
-            onClick={() =>
+            <Flex
+            direction={{ initial: "column", md: "row" }}
+            gap="4"
+            justify="center"
+            align="center"
+            style={{
+              width: "100%",
+              marginTop: "2rem",
+            }}
+            >
+            <Button
+              size="4"
+              color="sky"
+              mt="6"
+              variant="solid"
+              style={{ animation: "fadeInUp 2.2s ease-out both", minWidth: "180px" }}
+              onClick={() =>
               window.open("https://store.zoal.app", "_blank")
-            }
-          >
-            Join Early Access
-          </Button>
+              }
+            >
+              Join Early Access
+            </Button>
+            <Button
+              size="4"
+              color="sky"
+              mt="6"
+              variant="outline"
+              style={{ animation: "fadeInUp 2.2s ease-out both", minWidth: "180px" }}
+              onClick={() =>
+              window.open("https://discord.gg/bXGa9K4pme", "_blank")
+              }
+            >
+              Join the Discord
+            </Button>
+            </Flex>
 
           <motion.img
             src="./zoalipad1.png"
