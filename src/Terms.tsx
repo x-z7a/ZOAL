@@ -33,7 +33,7 @@ export default function Terms() {
               Effective Date: {new Date().toLocaleDateString()}
             </Text>
 
-            <Heading as="h2" size="6" mb="3">
+            <Heading as="h2" size="6" mb="3" mt="6">
               1. Acceptance of Terms
             </Heading>
             <Text as="p" size="4" mb="4">
@@ -43,7 +43,7 @@ export default function Terms() {
               use the Service.
             </Text>
 
-            <Heading as="h2" size="6" mb="3">
+            <Heading as="h2" size="6" mb="3" mt="6">
               2. License Grant
             </Heading>
             <Text as="p" size="4" mb="4">
@@ -54,7 +54,7 @@ export default function Terms() {
               in commercial training environments.
             </Text>
 
-            <Heading as="h2" size="6" mb="3">
+            <Heading as="h2" size="6" mb="3" mt="6">
               3. Restrictions
             </Heading>
             <ul
