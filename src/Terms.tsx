@@ -30,7 +30,8 @@ export default function Terms() {
               size="4"
               style={{ lineHeight: 1.8, marginBottom: "2rem" }}
             >
-              Effective Date: {new Date().toLocaleDateString()}
+              {/* Effective Date: {new Date().toLocaleDateString()} */}
+              Effective Date: 5/23/2025
             </Text>
 
             <Heading as="h2" size="6" mb="3" mt="6">
