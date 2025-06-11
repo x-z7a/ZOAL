@@ -64,11 +64,11 @@ function App() {
             Welcome to the next generation of X-Plane simulation. <br />
             Bring your simulation to life with WebGA.
           </Text>
-          <Callout.Root color="blue" mt="4">
+          <Callout.Root style={{ animation: "fadeInUp 2.2s ease-out both" }} color="blue" size="3" mt="4">
             <Callout.Text>
               ✨ Update: Try WebGA for free with the Laminar C172! &nbsp;
               <Link to="/instructions" style={{ textDecoration: "underline", color: "#60a5fa" }}>
-                Get started today!
+                Get started for free today!
               </Link>
             </Callout.Text>
           </Callout.Root>

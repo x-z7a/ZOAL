@@ -101,7 +101,7 @@ export default function Terms() {
               manufacturers.
             </Text>
 
-            <Heading as="h2" size="6" mb="3">
+            <Heading as="h2" size="6" mb="3" mt="6">
               5. Disclaimer of Warranty
             </Heading>
             <Text as="p" size="4" mb="4">
@@ -111,7 +111,7 @@ export default function Terms() {
               plugin at your own risk.
             </Text>
 
-            <Heading as="h2" size="6" mb="3">
+            <Heading as="h2" size="6" mb="3" mt="6">
               6. Limitation of Liability
             </Heading>
             <Text as="p" size="4" mb="4">
@@ -121,7 +121,7 @@ export default function Terms() {
               data, simulator crashes, or system incompatibility.
             </Text>
 
-            <Heading as="h2" size="6" mb="3">
+            <Heading as="h2" size="6" mb="3" mt="6">
               7. Termination
             </Heading>
             <Text as="p" size="4" mb="4">
@@ -130,7 +130,7 @@ export default function Terms() {
               piracy, or unauthorized access is detected.
             </Text>
 
-            <Heading as="h2" size="6" mb="3">
+            <Heading as="h2" size="6" mb="3" mt="6">
               8. Changes to Terms
             </Heading>
             <Text as="p" size="4" mb="6">
@@ -139,7 +139,7 @@ export default function Terms() {
               updated terms. The latest version will always be available at{" "}
               <strong>zoal.app/terms</strong>.
             </Text>
-            <Heading as="h2" size="6" mb="3">
+            <Heading as="h2" size="6" mb="3" mt="6">
               9. Third-Party Trademarks
             </Heading>
             <Text as="p" size="4" mb="6">
@@ -153,7 +153,11 @@ export default function Terms() {
               software is not affiliated with, endorsed by, or sponsored by
               Garmin Ltd. or any of its subsidiaries. The WebGA plugin is
               intended solely for use within flight simulator environments and
-              does not represent or replicate certified aviation systems.
+              does not represent or replicate certified aviation systems.&nbsp;
+            </Text>
+            <Text as="p" size="4" mb="6">
+              Furthermore, all trademarks of Laminar Research and X-Plane belong to X-Plane and Laminar Research. 
+              ZOAL never implies ownership of any of these copyrights. 
             </Text>
           </Box>
         </Box>

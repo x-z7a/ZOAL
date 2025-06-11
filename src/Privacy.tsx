@@ -33,7 +33,7 @@ export default function Privacy() {
               Effective Date: {new Date().toLocaleDateString()}
             </Text>
 
-            <Heading as="h2" size="6" mb="3">
+            <Heading as="h2" size="6" mb="3" mt="6">
               Introduction
             </Heading>
             <Text as="p" size="4" mb="4">
@@ -45,7 +45,7 @@ export default function Privacy() {
               SR22 modules, and the zoal.app website.
             </Text>
 
-            <Heading as="h2" size="6" mb="3">
+            <Heading as="h2" size="6" mb="3" mt="6">
               What We Collect
             </Heading>
             <ul
@@ -119,7 +119,7 @@ export default function Privacy() {
               environment at all times.
             </Text>
 
-            <Heading as="h2" size="6" mb="3">
+            <Heading as="h2" size="6" mb="3" mt="6">
               Data Storage and Security
             </Heading>
             <Text as="p" size="4" mb="4">
@@ -131,7 +131,7 @@ export default function Privacy() {
               external servers.
             </Text>
 
-            <Heading as="h2" size="6" mb="3">
+            <Heading as="h2" size="6" mb="3" mt="6">
               Cookies and Local Storage
             </Heading>
             <Text as="p" size="4" mb="4">
@@ -141,7 +141,7 @@ export default function Privacy() {
               explicitly submitted.
             </Text>
 
-            <Heading as="h2" size="6" mb="3">
+            <Heading as="h2" size="6" mb="3" mt="6">
               Your Rights
             </Heading>
             <ul
