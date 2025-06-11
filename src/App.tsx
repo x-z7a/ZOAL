@@ -1,9 +1,11 @@
 import "@radix-ui/themes/styles.css";
 import "./App.css";
-import {Box, Button, Flex, Heading, Text, Theme} from "@radix-ui/themes";
-import {motion} from "framer-motion";
+import { Box, Button, Callout, Flex, Heading, Text, Theme } from "@radix-ui/themes";
+import { motion } from "framer-motion";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
+
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
           // padding: "4rem 1rem",
         }}
       >
-        <NavBar/>
+        <NavBar />
 
         <Flex
           direction="column"
@@ -59,11 +61,19 @@ function App() {
               animation: "fadeInUp 1.6s ease-out both",
             }}
           >
-            Welcome to the next generation of X-Plane simulation. <br/>
+            Welcome to the next generation of X-Plane simulation. <br />
             Bring your simulation to life with WebGA.
           </Text>
+          <Callout.Root color="blue" mt="4">
+            <Callout.Text>
+              ✨ Update: Try WebGA for free with the Laminar C172! &nbsp;
+              <Link to="/instructions" style={{ textDecoration: "underline", color: "#60a5fa" }}>
+                Get started today!
+              </Link>
+            </Callout.Text>
+          </Callout.Root>
 
-            <Flex
+          <Flex
             direction={{ initial: "column", md: "row" }}
             gap="4"
             justify="center"
@@ -72,7 +82,7 @@ function App() {
               width: "100%",
               marginTop: "2rem",
             }}
-            >
+          >
             <Button
               size="4"
               color="sky"
@@ -80,7 +90,7 @@ function App() {
               variant="solid"
               style={{ animation: "fadeInUp 2.2s ease-out both", minWidth: "180px" }}
               onClick={() =>
-              window.open("https://store.zoal.app", "_blank")
+                window.open("https://store.zoal.app", "_blank")
               }
             >
               Join Early Access
@@ -92,20 +102,20 @@ function App() {
               variant="outline"
               style={{ animation: "fadeInUp 2.2s ease-out both", minWidth: "180px" }}
               onClick={() =>
-              window.open("https://discord.gg/bXGa9K4pme", "_blank")
+                window.open("https://discord.gg/bXGa9K4pme", "_blank")
               }
             >
               Join the Discord
             </Button>
-            </Flex>
+          </Flex>
 
           <motion.img
             src="./zoalipad1.png"
             alt="WebGA UI Screenshot"
-            initial={{opacity: 0, y: 30}}
-            whileInView={{opacity: 1, y: 0}}
-            viewport={{once: true, amount: 0.3}}
-            transition={{duration: 1.6, ease: "easeOut"}}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 1.6, ease: "easeOut" }}
             style={{
               width: "100%",
               marginTop: "4rem",
@@ -117,10 +127,10 @@ function App() {
           />
 
           <motion.div
-            initial={{opacity: 0, y: 40}}
-            whileInView={{opacity: 1, y: 0}}
-            viewport={{once: true, amount: 0.3}}
-            transition={{duration: 1.4, ease: "easeOut"}}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 1.4, ease: "easeOut" }}
             style={{
               display: "flex",
               flexDirection: "row",
@@ -133,19 +143,19 @@ function App() {
               marginRight: "auto",
             }}
           >
-            <Box style={{flex: "1 1 200px"}}>
-              <Heading size="7" as="h2" highContrast style={{color: "white"}}>
+            <Box style={{ flex: "1 1 200px" }}>
+              <Heading size="7" as="h2" highContrast style={{ color: "white" }}>
                 Experience X-Plane like never before
               </Heading>
-              <Heading size="5" as="h2" mt="6" highContrast style={{color: "white"}}>
+              <Heading size="5" as="h2" mt="6" highContrast style={{ color: "white" }}>
                 Have full view of your aircraft systems from your very own home cockpit devices.
               </Heading>
-              <Heading size="5" as="h2" mt="6" highContrast style={{color: "white"}}>
+              <Heading size="5" as="h2" mt="6" highContrast style={{ color: "white" }}>
                 Your avionics at the tip of your finger: Say goodbye to the days of mouse frustrations - whether on
                 approach or on the ground.
               </Heading>
             </Box>
-            <Box style={{flex: "1 1 600px", textAlign: "center"}}>
+            <Box style={{ flex: "1 1 600px", textAlign: "center" }}>
               <img
                 src="./retro1.png"
                 style={{
@@ -159,10 +169,10 @@ function App() {
           </motion.div>
 
           <motion.div
-            initial={{opacity: 0, y: 30}}
-            whileInView={{opacity: 1, y: 0}}
-            viewport={{once: true, amount: 0.3}}
-            transition={{duration: 1.2, ease: "easeOut"}}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
             style={{
               marginTop: "6rem",
               maxWidth: "1000px",
@@ -190,35 +200,35 @@ function App() {
               mirrors your cockpit's G1000 PFD/MFD, Garmin G530, or almost any other popout X-Plane 12 window in near
               real-time over Wi-Fi, allowing you to interact with the avionics as if they were built into your home
               cockpit.
-              <br/><br/>
+              <br /><br />
               Whether you're managing an approach, tuning radios, or just want to declutter your monitor, WebGA gives
               you the freedom to fly your sim the way it was meant to be flown — hands-on, heads-up.
             </Text>
 
             <motion.div
-              initial={{opacity: 0, y: 20}}
-              whileInView={{opacity: 1, y: 0}}
-              viewport={{once: true, amount: 0.4}}
-              transition={{duration: 1.1, ease: "easeOut", delay: 0.2}}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 1.1, ease: "easeOut", delay: 0.2 }}
             >
-                <Button
+              <Button
                 size="4"
                 color="sky"
                 variant="solid"
                 mt="8"
                 onClick={() => window.location.href = "/instructions"}
-                >
+              >
                 See It In Action
-                </Button>
+              </Button>
             </motion.div>
           </motion.div>
 
           {/* Supported Aircraft / Devices / Features / Release Notes */}
           <motion.div
-            initial={{opacity: 0, y: 40}}
-            whileInView={{opacity: 1, y: 0}}
-            viewport={{once: true, amount: 0.3}}
-            transition={{duration: 1.2, ease: "easeOut"}}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
             style={{
               display: "flex",
               flexWrap: "wrap",
@@ -231,11 +241,11 @@ function App() {
               marginRight: "auto",
             }}
           >
-            <Box style={{flex: "1 1 400px", minWidth: "300px"}}>
+            <Box style={{ flex: "1 1 400px", minWidth: "300px" }}>
               <Heading size="6" as="h2" mb="4">
                 ✅ Supported Aircraft
               </Heading>
-              <ul style={{listStyleType: "square", paddingLeft: "1.5rem", lineHeight: "2"}}>
+              <ul style={{ listStyleType: "square", paddingLeft: "1.5rem", lineHeight: "2" }}>
                 <li>AFL C172 Analog & Digital</li>
                 <li>TorqueSim Cirrus SR22</li>
                 <li>Aerobask Phenom 300</li>
@@ -245,12 +255,12 @@ function App() {
               </ul>
             </Box>
 
-            <Box style={{flex: "1 1 400px", minWidth: "300px"}}>
+            <Box style={{ flex: "1 1 400px", minWidth: "300px" }}>
               <Heading size="6" as="h2" mb="4">
                 📱 Supported Devices
               </Heading>
               <Text size="4">WebGA runs on any modern tablet with a browser:</Text>
-              <ul style={{listStyleType: "square", paddingLeft: "1.5rem", lineHeight: "2"}}>
+              <ul style={{ listStyleType: "square", paddingLeft: "1.5rem", lineHeight: "2" }}>
                 <li>iPad</li>
                 <li>Android Tablets</li>
                 <li>Windows Surface</li>
@@ -259,11 +269,11 @@ function App() {
               </ul>
             </Box>
 
-            <Box style={{flex: "1 1 400px", minWidth: "300px"}}>
+            <Box style={{ flex: "1 1 400px", minWidth: "300px" }}>
               <Heading size="6" as="h2" mb="4">
                 🎛️ Included Simulation Modules
               </Heading>
-              <ul style={{listStyleType: "square", paddingLeft: "1.5rem", lineHeight: "2"}}>
+              <ul style={{ listStyleType: "square", paddingLeft: "1.5rem", lineHeight: "2" }}>
                 <li>G1000 PFD</li>
                 <li>G1000 MFD</li>
                 <li>Garmin G530</li>
@@ -272,14 +282,14 @@ function App() {
               </ul>
             </Box>
 
-            <Box style={{flex: "1 1 400px", minWidth: "300px"}}>
+            <Box style={{ flex: "1 1 400px", minWidth: "300px" }}>
               <Heading size="6" as="h2" mb="4">
                 🛫 Release Notes: <code>v001b2</code>
               </Heading>
               <Text size="4">
-                New aircraft support added: <br/>
-                ✅ X-Plane 12 SR22 GCU integration <br/>
-                ✅ Improved G1000 wrapper <br/>
+                New aircraft support added: <br />
+                ✅ X-Plane 12 SR22 GCU integration <br />
+                ✅ Improved G1000 wrapper <br />
                 ✅ Improved compatibility with non-Garmin stack avionics
               </Text>
             </Box>
@@ -287,10 +297,10 @@ function App() {
 
           {/* Footer */}
           <motion.div
-            initial={{opacity: 0, y: 20}}
-            whileInView={{opacity: 1, y: 0}}
-            viewport={{once: true, amount: 0.3}}
-            transition={{duration: 1.2, ease: "easeOut"}}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
             style={{
               maxWidth: "900px",
               margin: "4rem auto 6rem auto",
@@ -307,11 +317,11 @@ function App() {
               <img
                 src="./zoalsimmods.svg"
                 alt="ZOAL Logo"
-                style={{maxWidth: "100%", height: "auto"}}
+                style={{ maxWidth: "100%", height: "auto" }}
               />
             </Box>
           </motion.div>
-          <Footer/>
+          <Footer />
         </Flex>
       </Box>
     </Theme>
