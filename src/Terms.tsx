@@ -156,9 +156,9 @@ export default function Terms() {
               does not represent or replicate certified aviation systems.&nbsp;
             </Text>
             <Text as="p" size="4" mb="6">
-              Furthermore, all trademarks of Laminar Research and X-Plane belong to X-Plane and Laminar Research. 
-              ZOAL never implies ownership of any of these copyrights. 
+              Furthermore, X-Plane® and all related trademarks, logos, and brand elements are the exclusive property of Laminar Research. WebGA is an independent project developed by ZOAL and is not affiliated with, endorsed by, or sponsored by Laminar Research or the X-Plane development team. Any references to X-Plane or Laminar Research are made solely for descriptive and compatibility purposes. ZOAL makes no claim of ownership over any intellectual property belonging to Laminar Research.
             </Text>
+
           </Box>
         </Box>
       </motion.div>
