@@ -86,7 +86,7 @@ function App() {
             <Button
               size="4"
               color="sky"
-              mt="6"
+              mt="2"
               variant="solid"
               style={{ animation: "fadeInUp 2.2s ease-out both", minWidth: "180px" }}
               onClick={() =>
@@ -98,7 +98,7 @@ function App() {
             <Button
               size="4"
               color="sky"
-              mt="6"
+              mt="2"
               variant="outline"
               style={{ animation: "fadeInUp 2.2s ease-out both", minWidth: "180px" }}
               onClick={() =>
