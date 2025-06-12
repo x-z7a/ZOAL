@@ -26,6 +26,9 @@
     transform: translateY(-6px);
   }
 }
+body {
+  margin: -5px !important;
+}
 input {
   border: 1px solid white;
 }

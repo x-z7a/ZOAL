@@ -110,7 +110,7 @@ function App() {
           </Flex>
 
           <motion.img
-            src="./zoalipad1.png"
+            src="./zoalipad.png"
             alt="WebGA UI Screenshot"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
