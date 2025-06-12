@@ -15,8 +15,9 @@ p {
 	display: flex;
 	justify-content: center;
 	/* width: 100vw; */
+	align-items: center;
 	z-index: 1;
-    height: 50px;
+    height: 90px;
 }
 
 .NavigationMenuList {
