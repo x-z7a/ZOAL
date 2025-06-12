@@ -86,7 +86,7 @@ export default function Instructions() {
               </a>
             </li>
           </ul>
-{/* instructions */}
+          {/* instructions */}
           <Heading as="h2" size="6" mt="6" mb="2" highContrast>
             More Detailed Instructions
           </Heading>
@@ -223,7 +223,7 @@ export default function Instructions() {
                     />
                   </Box>
                   <Box py="4"><h3>From your iPad or Tablet</h3></Box>
-                    <Box mb="4"
+                  <Box mb="4"
                     style={{
                       position: "relative",
                       paddingBottom: "56.25%",
@@ -251,46 +251,11 @@ export default function Instructions() {
                   </Box>
                 </Accordion.Content>
               </Accordion.Item>
-
-              <Accordion.Item value="item-3">
-                <Accordion.Header>
-                  <Accordion.Trigger
-                    style={{
-                      all: "unset",
-                      backgroundColor: "#2c2c2c",
-                      color: "white",
-                      padding: "1rem",
-                      width: "100%",
-                      textAlign: "left",
-                      borderRadius: "8px",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "space-between",
-                      cursor: "pointer",
-                      marginBottom: "0.5rem",
-                    }}
-                  >
-                    Another Coming Soon
-                    <ChevronDownIcon />
-                  </Accordion.Trigger>
-                </Accordion.Header>
-                <Accordion.Content
-                  style={{
-                    backgroundColor: "#1e1e1e",
-                    color: "#ccc",
-                    padding: "1rem",
-                    borderRadius: "8px",
-                    marginBottom: "1rem",
-                  }}
-                >
-                  Another Coming Soon!
-                </Accordion.Content>
-              </Accordion.Item>
             </Accordion.Root>
           </Box>
           {/* faq */}
           <Heading as="h2" size="6" mt="9" mb="2" highContrast>
-           Frequently Asked Questions
+            Frequently Asked Questions
           </Heading>
 
           <Text size="4" as="p" style={{ lineHeight: 1.6 }}>
@@ -359,8 +324,7 @@ export default function Instructions() {
                   </Box>
                 </Accordion.Content>
               </Accordion.Item>
-
-              <Accordion.Item value="loading-webga">
+              <Accordion.Item value="port-configuration">
                 <Accordion.Header>
                   <Accordion.Trigger
                     style={{
@@ -378,7 +342,7 @@ export default function Instructions() {
                       marginBottom: "0.5rem",
                     }}
                   >
-                    Another Coming Soon
+                    How do I change WebGA's port?
                     <ChevronDownIcon />
                   </Accordion.Trigger>
                 </Accordion.Header>
@@ -391,11 +355,10 @@ export default function Instructions() {
                     marginBottom: "1rem",
                   }}
                 >
-                  <p>Running WebGA for the first time is pretty easy, and once you watch this video - you'll be a pro!</p>
-                  <p><strong>Key Notes:</strong> From your simulator machine, access <strong>localhost:8080</strong> in the browser</p>
-                  <p>From your iPad or tablet, access either <strong>webga.local:8080</strong> (if your device supports it) or <strong>yoursimulatoripaddress:8080</strong></p>
-                  <Box py="4"><h3>Getting Started</h3></Box>
-                  <Box mb="4"
+                  <p>
+                    Changing the port WebGA uses is quite easy. Watch this quick video to learn how.
+                  </p>
+                  <Box
                     style={{
                       position: "relative",
                       paddingBottom: "56.25%",
@@ -404,7 +367,7 @@ export default function Instructions() {
                     }}
                   >
                     <iframe
-                      src="https://www.loom.com/embed/e83e91fe0d984388920a478f4b4e7579?sid=8b5838f7-7951-4619-a01d-a3f8066eadb1"
+                      src="https://www.loom.com/embed/f2c42b126b004150b1e7a551fde466e6?sid=b5d8af47-31d7-4660-ace0-b0e31a3647c9"
                       frameBorder="0"
                       allowFullScreen
                       style={{
@@ -415,71 +378,9 @@ export default function Instructions() {
                         height: "100%",
                         borderRadius: "8px",
                       }}
-                      title="WebGA Loading for the First Time Video"
+                      title="WebGA Download and Installation Video"
                     />
                   </Box>
-                  <Box py="4"><h3>From your iPad or Tablet</h3></Box>
-                    <Box mb="4"
-                    style={{
-                      position: "relative",
-                      paddingBottom: "56.25%",
-                      height: 0,
-                      marginBottom: "1rem",
-                    }}
-                  >
-                    <iframe
-                      src="https://www.youtube.com/embed/LZyPVmtVpI8?si=YKOg99zSmaK12Jl5"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      style={{
-                        position: "absolute",
-                        top: 0,
-                        left: 0,
-                        width: "100%",
-                        height: "100%",
-                        borderRadius: "8px",
-                      }}
-                    />
-
-                  </Box>
-                </Accordion.Content>
-              </Accordion.Item>
-
-              <Accordion.Item value="item-3">
-                <Accordion.Header>
-                  <Accordion.Trigger
-                    style={{
-                      all: "unset",
-                      backgroundColor: "#2c2c2c",
-                      color: "white",
-                      padding: "1rem",
-                      width: "100%",
-                      textAlign: "left",
-                      borderRadius: "8px",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "space-between",
-                      cursor: "pointer",
-                      marginBottom: "0.5rem",
-                    }}
-                  >
-                    Another Coming Soon
-                    <ChevronDownIcon />
-                  </Accordion.Trigger>
-                </Accordion.Header>
-                <Accordion.Content
-                  style={{
-                    backgroundColor: "#1e1e1e",
-                    color: "#ccc",
-                    padding: "1rem",
-                    borderRadius: "8px",
-                    marginBottom: "1rem",
-                  }}
-                >
-                  Another Coming Soon
                 </Accordion.Content>
               </Accordion.Item>
             </Accordion.Root>

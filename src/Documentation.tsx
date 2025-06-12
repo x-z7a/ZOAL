@@ -28,7 +28,7 @@ export default function Documentation() {
           </Text>
 
           <Box mt="6">
-            <Accordion.Root defaultValue="network-configuration" type="single" collapsible>
+            <Accordion.Root defaultValue="system-requirements" type="single" collapsible>
               <Accordion.Item value="system-requirements">
                 <Accordion.Header>
                   <Accordion.Trigger style={accordionTriggerStyle}>
@@ -127,7 +127,7 @@ export default function Documentation() {
                 </Accordion.Header>
                 <Accordion.Content style={accordionContentStyle}>
                   <p>
-                    Layouts are stored in <code>config/panels.json</code>. You
+                    COMING SOON: Layouts are stored in <code>config/panels.json</code>. You
                     can define new views, re-order components, or assign them to
                     specific aircraft profiles.
                   </p>
