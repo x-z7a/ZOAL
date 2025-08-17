@@ -85,6 +85,15 @@ export default function Instructions() {
                 {"<your machine IP address>:8080"}
               </a>
             </li>
+            <li>
+              
+              <a
+              href="/checklist"
+              style={{ color: "#4ea1ff", textDecoration: "underline" }}
+              >
+              View the Checklist: 
+              </a> We have a handy checklist to help you once you're all set up and running.{" "}
+            </li>
           </ul>
           {/* instructions */}
           <Heading as="h2" size="6" mt="6" mb="2" highContrast>
