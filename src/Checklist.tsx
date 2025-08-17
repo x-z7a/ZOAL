@@ -120,6 +120,14 @@ Activate stream ensuring the device has been chosen.                </>
             ),
         },
                                 {
+            id: "viewer-resize",
+            label: (
+                <>
+                    Resize the popped-out window, if necessary, to fit your iPad or tablet screen.
+                </>
+            ),
+        },
+                                {
             id: "viewer-multiple-devices",
             label: (
                 <>
