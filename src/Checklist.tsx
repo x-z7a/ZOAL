@@ -252,7 +252,7 @@ To view multiple avionics devices from X-Plane, activate a new stream from the d
                         }}
                     >
                         <ChecklistSection
-                            title="From your Host machine"
+                            title="From your Host machine - Ensure X-Plane is running"
                             items={hostMachineItems}
                         />
 
