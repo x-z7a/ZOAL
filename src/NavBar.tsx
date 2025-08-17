@@ -16,6 +16,13 @@ const NavBar = () => {
             </Link>
           </NavigationMenu.Link>
         </NavigationMenu.Item>
+        <NavigationMenu.Item>
+          <NavigationMenu.Link asChild>
+            <Link to="/contact" className="NavigationMenuLink">
+              Contact & Support
+            </Link>
+          </NavigationMenu.Link>
+        </NavigationMenu.Item>
 
         {/* Help dropdown */}
         <NavigationMenu.Item>

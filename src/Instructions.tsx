@@ -86,12 +86,12 @@ export default function Instructions() {
               </a>
             </li>
             <li>
-              
+
               <a
-              href="/checklist"
-              style={{ color: "#4ea1ff", textDecoration: "underline" }}
+                href="/checklist"
+                style={{ color: "#4ea1ff", textDecoration: "underline" }}
               >
-              View the Checklist: 
+                View the Checklist:
               </a> We have a handy checklist to help you once you're all set up and running.{" "}
             </li>
           </ul>

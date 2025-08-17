@@ -64,14 +64,14 @@ export default function Checklist() {
             id: "host-select-device-popout",
             label: (
                 <>
-Following the instruction on screen, select the window you wish to stream.                </>
+                    Following the instruction on screen, select the window you wish to stream.                </>
             ),
         },
         {
             id: "host-activate-stream",
             label: (
                 <>
-Activate stream ensuring the device has been chosen.                </>
+                    Activate stream ensuring the device has been chosen.                </>
             ),
         },
 
@@ -103,7 +103,7 @@ Activate stream ensuring the device has been chosen.                </>
                 </>
             ),
         },
-                {
+        {
             id: "viewer-select-device",
             label: (
                 <>
@@ -111,7 +111,7 @@ Activate stream ensuring the device has been chosen.                </>
                 </>
             ),
         },
-                        {
+        {
             id: "viewer-confirmation",
             label: (
                 <>
@@ -119,7 +119,7 @@ Activate stream ensuring the device has been chosen.                </>
                 </>
             ),
         },
-                                {
+        {
             id: "viewer-resize",
             label: (
                 <>
@@ -127,11 +127,11 @@ Activate stream ensuring the device has been chosen.                </>
                 </>
             ),
         },
-                                {
+        {
             id: "viewer-multiple-devices",
             label: (
                 <>
-To view multiple avionics devices from X-Plane, activate a new stream from the desktop view and repeat the process in a new tab or different iPad/tablet                </>
+                    To view multiple avionics devices from X-Plane, activate a new stream from the desktop view and repeat the process in a new tab or different iPad/tablet                </>
             ),
         },
     ];
