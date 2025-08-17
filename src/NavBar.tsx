@@ -53,7 +53,7 @@ const NavBar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Join Early Access
+              Unlock Full Access
             </a>
           </NavigationMenu.Link>
         </NavigationMenu.Item>
