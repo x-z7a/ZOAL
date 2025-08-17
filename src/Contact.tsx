@@ -137,7 +137,7 @@ export default function Contact() {
               Email Support
             </Heading>
             <Text size="4" as="p" style={{ lineHeight: 1.6 }}>
-              Although Discord is faster and better for support, we want to remain transparent. For questions or technical support, reach out to us at{" "}
+              Although Discord is faster and better for support, we want to remain transparent. For private questions or support, reach out to us at{" "}
               <a
                 href="mailto:support@zoal.app"
                 style={{ color: "#4ea1ff", textDecoration: "underline" }}
