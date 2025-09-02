@@ -110,7 +110,8 @@ function App() {
           </Flex>
 
           <motion.img
-            src="./zoalipad.png"
+            
+            src="./zoalpilot.jpeg"
             alt="WebGA UI Screenshot"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -157,7 +158,8 @@ function App() {
             </Box>
             <Box style={{ flex: "1 1 600px", textAlign: "center" }}>
               <img
-                src="./retro1.png"
+              src="./zoalipad.png"
+                
                 style={{
                   width: "100%",
                   maxWidth: "600px",
