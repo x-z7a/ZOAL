@@ -111,7 +111,7 @@ function App() {
 
           <motion.img
             
-            src="./zoalpilot.jpeg"
+            src="./pilotzoalinhand.jpeg"
             alt="WebGA UI Screenshot"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
