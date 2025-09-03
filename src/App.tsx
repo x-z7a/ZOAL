@@ -138,7 +138,7 @@ function App() {
               marginRight: "auto",
             }}
           >
-            <Box style={{ flex: "1 1 200px" }}>
+            <Box style={{ flex: "1 1 300px", textAlign: "center" }}>
               <Heading size="7" as="h2" highContrast style={{ color: "white" }}>
                 Experience X-Plane like never before
               </Heading>
@@ -146,6 +146,7 @@ function App() {
                 size="5"
                 as="h2"
                 mt="6"
+                weight={"medium"}
                 highContrast
                 style={{ color: "white" }}
               >
@@ -156,6 +157,7 @@ function App() {
                 size="5"
                 as="h2"
                 mt="6"
+                weight={"medium"}
                 highContrast
                 style={{ color: "white" }}
               >
@@ -163,12 +165,12 @@ function App() {
                 of mouse frustrations - whether on approach or on the ground.
               </Heading>
             </Box>
-            <Box style={{ flex: "1 1 600px", textAlign: "center" }}>
+            <Box style={{ flex: "1 1 400px", textAlign: "center" }}>
               <img
-                src="./zoalipad.png"
+                src="./zoaldesk.png"
                 style={{
                   width: "100%",
-                  maxWidth: "600px",
+                  maxWidth: "800px",
                   borderRadius: "12px",
                   boxShadow: "0px 20px 60px rgba(0, 0, 0, 0.5)",
                 }}
