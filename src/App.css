@@ -42,7 +42,7 @@
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url("./pilotzoalinhand.jpeg");
+  background-image: url("https://zoal.app/pilotzoalinhand.jpeg");
   background-size: cover;
   background-position: center;
   filter: saturate(1.05) brightness(1.8);
