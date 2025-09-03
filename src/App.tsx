@@ -93,7 +93,7 @@ function App() {
                     color="sky"
                     variant="outline"
                     onClick={() =>
-                      window.open("https://discord.gg/bXGa9K4pme", "_blank")
+                      window.open("https://discord.gg/dfkVEzVsuS", "_blank")
                     }
                     style={{ minWidth: 180 }}
                   >
