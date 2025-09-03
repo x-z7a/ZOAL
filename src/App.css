@@ -78,9 +78,9 @@
   margin: 0 0 1rem 0;
 }
 
-.hero p {
+/* .hero p {
   margin: 0 0 1.25rem 0;
-}
+} */
 
 /* Layout tweaks */
 @media (min-width: 768px) {
