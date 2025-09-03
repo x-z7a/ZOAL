@@ -27,6 +27,88 @@
   }
 }
 
+/* --- Hero (image behind text) --- */
+.hero {
+  position: relative;
+  min-height: clamp(520px, 65vh, 760px);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-4);
+  isolation: isolate; /* keeps overlay contained */
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("./pilotzoalinhand.jpeg");
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.05) brightness(1.8);
+  transform: scale(1.02);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  /* Subtle vignette + left-to-right legibility gradient */
+  background:
+    radial-gradient(120% 100% at 80% 0%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0.9) 100%),
+    linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.35) 45%, rgba(0,0,0,0.15) 70%, rgba(0,0,0,0.05) 100%);
+  mix-blend-mode: normal;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  width: min(100%, 1000px);
+  margin: 0 auto;
+}
+
+.hero-inner {
+  max-width: 720px;
+}
+
+/* Headline + body */
+.hero h1 {
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+  margin: 0 0 1rem 0;
+}
+
+.hero p {
+  margin: 0 0 1.25rem 0;
+}
+
+/* Layout tweaks */
+@media (min-width: 768px) {
+  .hero-inner {
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-inner {
+    text-align: left; /* can switch to center if preferred */
+  }
+}
+
+/* Button row */
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.hero-callout {
+  margin-top: 1rem;
+  max-width: 720px;
+}
+
+
 input {
   border: 1px solid white;
 }
