@@ -48,6 +48,7 @@ export default function Documentation() {
                     <li>
                       Device on same network (local Wi-Fi) for tablet control
                     </li>
+                    <li>For iOS / iPad, requires iOS 11.x or newer. Will not work on iOS 10.x</li>
                   </ul>
                 </Accordion.Content>
               </Accordion.Item>
