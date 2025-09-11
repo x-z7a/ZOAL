@@ -272,7 +272,7 @@ function App() {
                 <li>C90B G1000/G530</li>
                 <li>AFL KingAir 350</li>
                 <li>
-                  Virtually any aircraft using default Garmin G1000/G530 stack
+                  If it has a G1000/G530!
                 </li>
               </ul>
             </Box>
